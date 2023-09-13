@@ -1,0 +1,27 @@
+h1{
+    background-color: aqua;
+    color: blue;
+}
+h2{
+    background-color: blueviolet;
+    color: coral;
+    display: inline;
+}
+.ban{
+    background-color: darkcyan;
+    color: deeppink;
+
+}
+#man{
+    background-color: goldenrod;
+    color: darkred;
+}
+.can{
+    background-color: beige;
+    color: brown;
+}
+#van{
+    background-color: deepskyblue;
+    color: hotpink;
+    display: inline;
+}
