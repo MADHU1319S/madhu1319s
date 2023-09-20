@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #absolute
+    {
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+    }
+    #relative{
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+    }
+    .flex{
+        border: 2px solid black;
+        height: 300px;
+        width: 500px;
+        background-color: aqua;
+    }
+    .flex .a,.b,.c{
+        display:flex;
+
+    }
+    .flex .a,.c{
+        justify-content: center;
+        gap: 300px;
+    }
+    .flex .b{
+        justify-content: center;
+        /* gap: 100px; */
+    }
+    .layout4,.layout5,.layout6{
+        border: 5px solid black;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+    .l41{
+        border: 5px solid aqua;
+        border-radius: 10px;
+        padding: 10px;
+    
+    }
+</style>
+<body>
+    <div class="container">
+        <div style="position: sticky;top: 0;border: 2px solid black;height: 100px;background-color: aqua;text-align: center;">
+            <h1>CSS Possitions</h1>
+        </div>
+        <h1>absolute possition</h1>
+        <div id="absolute">
+            <div style="position: absolute;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: absolute;left: 409px;">
+                <img src="./enginers day.png" height="100" width="100"> 
+            </div>
+            <div style="position: absolute;left: 200px;bottom: 200px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: absolute;top:592px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: absolute;left:409px;bottom: 12px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+        </div>
+        <h1>relative possition</h1>
+        <div id="relative">
+            <div style="position: relative;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: relative;left:400px;top: -104px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: relative;left:200px;top: -10px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: relative;left: 400px;top: 87px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div style="position: relative;top: -17px;">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+
+        </div>
+        <h1>using flex</h1>
+        <div class="flex">
+            <div class="a">
+                <img src="./enginers day.png" height="100" width="100">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div class="b">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+            <div class="c">
+                <img src="./enginers day.png" height="100" width="100">
+                <img src="./enginers day.png" height="100" width="100">
+            </div>
+
+        </div>
+        <h1>4-layout</h1>
+        <div class="layout4">
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+
+        </div>
+        <h1>5-layout</h1>
+        <div class="layout5">
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+
+        </div>
+        <h1>6-layout</h1>
+        <div class="layout6">
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+            <div class="l41"><p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+    
+    </div>
+</body>
+</html>
