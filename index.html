@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        @media screen and (max-width:468px){
+            .container{
+                border: 5px solid blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: aquamarine;
+            }
+            img{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+            .container2{
+                display: none;
+            }     
+        }
+
+        @media screen and (min-width:469px) and (max-width:1440px){
+            .container{
+                display: none;
+    
+            }
+         }
+
+
+
+         @media screen and (max-width:768px){
+            .container2{
+                border: 5px solid lightcoral;
+                background-color: grey;
+
+            }
+            .one{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .container3{
+                display: none;
+            }
+            
+         }
+
+         @media screen and (min-width:769px) and (max-width:1440px){
+            .container2{
+                display: none;
+    
+            }
+         }
+
+
+
+         @media screen and (max-width:1024px){
+            .container3{
+                border: 5px solid hotpink;
+                background-color: lightseagreen;
+            
+            .two{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            
+         }
+
+         @media screen and (min-width:1025px) and (max-width:1448px){
+            .container3{
+                display: none;
+    
+            }
+            .container{
+                display: none;
+            }
+            .container2{
+                display: none;
+            }
+         }
+
+
+
+
+         @media screen and (max-width:1448px){
+            .container4{
+                border: 5px solid lime;
+                background-color: crimson;
+            }
+            .three{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+            } 
+         }
+
+         @media screen and (max-width:1025px){
+            .container4{
+                display: none;
+    
+            }
+         }
+            
+         img{
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 50px;
+         }
+        
+
+
+
+
+         @media screen and (max-width:468px){
+            .nav{
+                background-color: aqua;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+            
+         }
+         @media screen and (min-width:469px) and (max-width:768px){
+            .nav{
+                background-color: blue;
+                color: brown;
+                display: flex;
+                gap: 20px;
+            }
+            
+         }
+         @media screen and (min-width:769px) and (max-width:1024px){
+            .nav{
+                background-color: lightcoral;
+                color: darkblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+            
+         }
+         @media screen and (min-width:1025px) and (max-width:1448px){
+            .nav{
+                background-color: lightgreen;
+                justify-content: end;
+                align-items: end;
+                color: red;
+                display: flex;
+                gap: 20px;
+            }
+            
+         }
+         .nav{
+            
+            margin-bottom: 50px;
+         }
+        
+      </style>
+</head>
+<body>
+    <div class="nav">
+        <h3>Home</h3>
+        <h3>Why</h3>
+        <h3>Curriculm</h3>
+        <h3>Team</h3>
+        <h3>Employers</h3>
+        <h3>Admission</h3>
+        <h3>About us</h3>
+</div> 
+    <div class="container">
+        <div>
+            <img src="./pics/bird1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/bird2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/bird3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/bird4.jpeg" alt="bird" width="200" height="200">
+        </div>
+    
+    </div>
+    <div class="container2">
+        <div class="one">
+            <img src="./pics/tiger1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/tiger2.jpeg" alt="bird" width="200" height="200">
+        </div>
+        <div class="one">
+            <img src="./pics/tiger3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/tiger4.jpeg" alt="bird" width="200" height="200">
+        </div>
+    </div>
+    <div class="container3">
+        <div class="two">
+            <img src="./pics/flower1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower3.jpeg" alt="bird" width="200" height="200">
+        </div>
+        <div class="two">
+            <img src="./pics/flower1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower3.jpeg" alt="bird" width="200" height="200">
+        </div>
+        <div class="two">
+            <img src="./pics/flower1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/flower3.jpeg" alt="bird" width="200" height="200">
+        </div>
+        
+    </div>
+    <div class="container4">
+        <div class="three">
+            <img src="./pics/pet1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet4.jpg" alt="bird" width="200" height="200">
+        </div>
+        <div class="three">
+            <img src="./pics/pet1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet4.jpg" alt="bird" width="200" height="200">
+        </div>
+        <div class="three">
+            <img src="./pics/pet1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet4.jpg" alt="bird" width="200" height="200">
+        </div>
+        <div class="three">
+            <img src="./pics/pet1.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet2.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet3.jpeg" alt="bird" width="200" height="200">
+            <img src="./pics/pet4.jpg" alt="bird" width="200" height="200">
+        </div>
+        
+    </div>
+</body>
+</html>
