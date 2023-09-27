@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            margin-top: 300px;
+            height: 100px;
+            width: 100px;
+            display: grid;
+            
+            grid-template-columns: auto auto auto auto auto auto auto auto ;
+        
+        }
+        .grid-item {
+
+            border: 1px solid;
+            padding: 10px;
+        }
+        .item1{
+            background-color: lightblue;
+            padding: 80px;
+        
+        
+        }
+        .item4{
+            background-color: lightblue;
+            font-size: 90px;
+            padding-left: 35px;
+            
+        }
+        .item3{
+            font-size: 90px;
+            padding-left: 35px;
+        
+            
+        }
+
+
+        .main{
+            display: grid;
+            margin: 50px;
+            grid-template-columns: 150px 150px 150px ;
+            grid-template-rows: 50px 50px 50px 50px 50px 50px ;
+        }
+        .images{
+             border: 1px solid;
+             margin: 5px;
+        }
+        .d1{
+            grid-row: 1/4;
+        }
+        .d2{
+            grid-row: 1/3;
+        }
+        .d3{
+            grid-row: 1/3;
+        }
+        .d4{
+            grid-row: 4/7;
+        }
+        .d5{
+            grid-row: 3/7;
+        }
+        .d6{
+            grid-row: 3/5;
+        }
+        .d7{
+            grid-row: 5/7;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .CAL{
+            margin: 50px;
+            margin-bottom: 150px;
+            border: 2px solid black;
+            height: 400px;
+            width: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+
+        }
+        .calc1{
+            border: 1px solid;
+            grid-column: 1/5;
+            font-size: 40px;
+
+
+        }
+        .calc{
+            border: 1px solid;
+            background-color: lightslategray;
+            border-radius: 100px;
+            height: 10px;
+            margin: 25px 10px -50px 10px;
+            padding: 10px 10px 18px 15px;
+        }
+        .calc2{
+            border: 1px solid;
+            grid-column: 3/5;
+            border-radius: 100px;
+            background-color:lightblue;
+            padding: 10px 16px 10px 20px;
+            margin: 10px 10px -10px 30px;
+            height: 19px;
+            width: 15px;
+            position: relative;top: 18px;
+
+
+        }
+        
+
+    </style>
+</head>
+<body>
+     <h1>Gallery Using Grid</h1>
+   <div class="main">
+       <div class="images d1"><img src="./pics/bird1.jpeg"></div>
+       <div class="images d2"><img src="./pics/bird2.jpeg"></div>
+       <div class="images d3"><img src="./pics/flower1.jpeg"></div>
+       <div class="images d4"><img src="./pics/flower2.jpeg"></div>
+       <div class="images d5"><img src="./pics/tiger1.jpeg"></div>
+       <div class="images d6"><img src="./pics/pet4.jpg"></div>
+       <div class="images d7"><img src="./pics/flower3.jpeg"></div>
+   </div>
+
+    <h1>Calender Using Grid </h1>
+  <div class="CAL">
+    <div class="calc1">100003.223|</div>
+    <div class="calc">AC</div>
+    <div class="calc">%</div>
+    <div class="calc">+/-</div>
+    <div class="calc">*</div>
+    <div class="calc">7</div>
+    <div class="calc">8</div>
+    <div class="calc">9</div>
+    <div class="calc">/</div>
+    <div class="calc">4</div>
+    <div class="calc">5</div>
+    <div class="calc">6</div>
+    <div class="calc">-</div>
+    <div class="calc">1</div>
+    <div class="calc">2</div>
+    <div class="calc">3</div>
+    <div class="calc">+</div>
+    <div class="calc">0</div>
+    <div class="calc">.</div>
+    <div class="calc2">=</div>
+    
+  </div>
+
+     <h1 style="margin-bottom: -150px;">Chess Board Using Grid</h1>
+    <div class="grid-container">
+        <div class="grid-item item4">♖</div>
+            <div class="grid-item item3">♘</div>
+            <div class="grid-item item4">♗</div>
+            <div class="grid-item item3">♕</div>
+            <div class="grid-item item4">♔</div>
+            <div class="grid-item item3">♗</div>
+            <div class="grid-item item4">♘</div>
+            <div class="grid-item item3">♖</div>          
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div> 
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>  
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>  
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>  
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>  
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>  
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>  
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>  
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>  
+        <div class="grid-item item2"></div>
+        <div class="grid-item item1"></div>
+                 
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div>
+        <div class="grid-item item4">♙</div>
+        <div class="grid-item item3">♙</div> 
+        <div class="grid-item item3">♖</div>
+            <div class="grid-item item4">♘</div>
+            <div class="grid-item item3">♗</div>
+            <div class="grid-item item4">♔</div>
+            <div class="grid-item item3">♕</div>
+            <div class="grid-item item4">♗</div>
+            <div class="grid-item item3">♘</div>
+            <div class="grid-item item4">♖</div> 
+
+      </div>
+</body>
+</html>
