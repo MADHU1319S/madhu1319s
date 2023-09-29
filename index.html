@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 8px;
+        
+        }
+        
+        .load1{
+            border: 5px solid transparent;
+            background-color: blue;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            border-radius: 50px;
+            animation: b1 1s linear   infinite alternate-reverse;
+
+        }
+        @keyframes b1 {
+            0%{top:28px}
+            25%{top:0px; background-color: red;}
+            50%{top:7px; background-color:black;}
+            75%{top:14px; background-color: green;}
+            100%{top:21px; background-color:yellow;}
+            
+        }
+        .load2{
+            border: 5px solid transparent;
+            background-color: red;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            border-radius: 50px;
+            animation: b2 1s linear 0.3s infinite alternate-reverse;
+
+        }
+        @keyframes b2 {
+            0%{top:21px}
+            25%{top:28px; background-color: yellow;}
+            50%{top:0px; background-color:blue;}
+            75%{top:7px; background-color: black;}
+            100%{top:14px; background-color: green;}
+            
+        }
+        .load3{
+            border: 5px solid transparent;
+            background-color: yellow;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            border-radius: 50px;
+            animation: b3 1s linear 0.6s infinite alternate-reverse;
+
+        }
+        @keyframes b3 {
+            0%{top:14px}
+            25%{top:21px; background-color: green;}
+            50%{top:28px; background-color:red;}
+            75%{top:0px; background-color: blue;}
+            100%{top:7px; background-color: black;}
+            
+        }
+        .load4{
+            border: 5px solid transparent;
+            background-color: green;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            border-radius: 50px;
+            animation: b4 1s linear 0.9s infinite alternate-reverse;
+
+        }
+        @keyframes b4 {
+            0%{top:7px}
+            25%{top:14px; background-color: yellow;}
+            50%{top:21px; background-color:black;}
+            75%{top:28px; background-color: green;}
+            100%{top:0px; background-color: blue;}
+        }
+        .load5{
+            border: 5px solid transparent;
+            background-color: black;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            border-radius: 50px;
+            animation: b5 1s linear 1.2s  infinite alternate;
+
+        }
+        @keyframes b5 {
+            0%{top:28px}
+            25%{top:0px; background-color: blue;}
+            50%{top:7px; background-color:yellow;}
+            75%{top:14px; background-color: red;}
+            100%{top:21px; background-color: green;}
+            
+        }
+        .pics{
+            border: 2px solid;
+            margin: 100px;
+            height: 300px;
+            width: 400px;
+            animation: pics 15s linear -1s infinite alternate;
+        }
+        
+        @keyframes pics {
+            0%{transform: rotate(360deg); background-image: url(.m/marriage3.jpeg);}
+            10%{background-image: url(.//pics/marriage9.jpeg);}
+            20%{background-image: url(.//pics/marriage8.jpeg);}
+            30%{background-image: url(.//pics/marriage7.jpeg);}
+            40%{background-image: url(.//pics/marriage6.jpeg);}
+            50%{background-image: url(./pics/marriage\ 5.jpeg);}
+            60%{background-image: url(.//pics/marriage4.jpeg);}
+            70%{background-image: url(.//pics/marriage3.jpeg);}
+            80%{background-image: url(./pics/marriage\ 1.jpeg);}
+            90%{background-image: url(.//pics/marriage\ 2.jpeg);}
+            100%{background-image: url(.//pics/marriage10.jpeg);}
+
+            
+        }
+        
+
+        .ram{
+            border: 5px solid;
+            height: 600px ;
+            width: 600px;
+
+        }
+        .m1,.m2,.m3{
+            display: flex;
+            gap: 90px;
+            padding: 25px;  
+            margin-left: 200px;          
+
+        }
+        .m1{
+            margin-top: 200px;
+        }
+        .m3{
+            margin-bottom: 200px;
+        }
+        .bounce{
+            border: 1px solid;
+            border-radius: 50px;
+            background-color: aqua;
+            height: 25px;
+            width: 25px;
+            
+        }
+        .l1{
+            animation: l1 5s infinite alternate;
+        }
+        @keyframes l1 {
+            0%{}
+            20% {background-color: crimson; transform: translate(100px,200px);}
+            40%{background-color: darkblue; transform: translate(0px,100px);}
+            60%{background-color: cornflowerblue; transform: translate(100px,0px);}
+            80%{background-color: orangered; transform: translate(250px,200px);}
+            100%{background-color: forestgreen; transform: translate(0px,120px);}
+          
+        }
+        .l2{
+            animation: l2 5s infinite alternate-reverse;
+        }
+        @keyframes l2 {
+            0%{}
+            20%{background-color: grey; transform: translate(-100px,200px);}
+            40%{background-color: brown; transform: translate(110px,10px);}
+            60%{background-color: darkgoldenrod; transform: translate(-100px,10px);}
+            80%{background-color: deeppink; transform: translate(-50px,-20px);}
+            100%{background-color: green; transform: translate(100px,120px);}
+          
+        }
+        .l3{
+            animation: l3 5s infinite alternate;
+        }
+        @keyframes l3 {
+            0%{}
+            20%{background-color: darkblue; transform: translate(10px,-100px);}
+            40%{background-color: crimson; transform: translate(-90px,10px);}
+            60%{background-color: green; transform: translate(1px,100px);}
+            80%{background-color: orange; transform: translate(20px,0px);}
+            100%{background-color: darkviolet; transform: translate(100px,120px);}
+          
+        }
+        .l4{
+            animation: l4 5s infinite alternate-reverse;
+        }
+        @keyframes l4 {
+            0%{}
+            20%{background-color: deeppink; transform: translate(100px,-10px);}
+            40%{background-color: black; transform: translate(190px,100px);}
+            60%{background-color: coral; transform: translate(100px,0px);}
+            80%{background-color: green; transform: translate(150px,-70px);}
+            100%{background-color: crimson; transform: translate(-150px,120px);}
+          
+        }
+        .l5{
+            animation: l5 5s infinite alternate;
+        }
+        @keyframes l5 {
+            0%{}
+            20%{background-color: crimson; transform: translate(150px,100px);}
+            40%{background-color: darkmagenta; transform: translate(-90px,-10px);}
+            60%{background-color: dodgerblue; transform: translate(61px,100px);}
+            80%{background-color:  green; transform: translate(-60px,-50px);}
+            100%{background-color: blue; transform: translate(100px,20px);}
+          
+        }
+        .l6{
+            animation: l6 5s infinite alternate-reverse;
+        }
+        @keyframes l6 {
+            0%{}
+            20%{background-color: black; translate(100px,-150px);}
+            40%{background-color: blue;  transform: translate(-90px,100px);}
+            60%{background-color: brown; transform: translate(100px,-100px);}
+            80%{background-color: chartreuse; transform: translate(-120px,150px);}
+            100%{ background-color:hotpink; transform:translate(100px,10px);}
+          
+        }
+
+
+        .sita{
+            border: 5px solid;
+            height: 200px;
+            width: 300px;
+            margin: 100px;
+            padding: 200px 400px 0px 0px;
+        }
+        .sai{
+            margin-left: 300px;
+           
+        }
+        .anna{
+            border: 2px solid;
+            width: 220px;
+            color: cadetblue;
+            margin-top: -10px;
+            
+        }
+        .madhu{
+            border: 1px solid;
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            background-color: black;
+          
+            animation: madhu 4s infinite;
+
+        }
+        @keyframes madhu {
+            0%{background-color: aqua; transform: translate(-15px,10px);}
+            8% {background-color: red; transform: translate(35px,-25px);}
+            16%{background-color: blue; transform: translate(60px,60px);}
+            24%{background-color: brown; transform: translate(100px,-20px);}
+            32%{background-color: green; transform: translate(140px,65px);}      
+            40%{background-color: chocolate; transform: translate(180px,-25px);}
+            48%{background-color: darkmagenta; transform: translate(220px,10px);}
+            56%{background-color: darkslategray; transform: translate(180px,65px);}
+            65%{background-color: firebrick; transform: translate(140px,-20px);}
+            74%{background-color: darkblue; transform: translate(100px,65px);}
+            83%{background-color: chartreuse; transform: translate(60px,-20px);}
+            92%{background-color: gold; transform: translate(20px,65px);}
+            100%{background-color: indigo; transform: translate(-15px,10px);}
+        }
+        .krishna{
+            border: 1px solid;
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            background-color: black;
+          
+            animation: krishna 4s infinite;
+
+        }
+        @keyframes krishna {
+            0%{background-color: hotpink; transform: translate(-15px,10px);}
+            8% {background-color: royalblue; transform: translate(35px,40px);}
+            16%{background-color: indigo; transform: translate(60px,-40px);}
+            24%{background-color: black; transform: translate(100px,45px);}
+            32%{background-color: gold; transform: translate(140px,-40px);}      
+            40%{background-color: green; transform: translate(180px,45px);}
+            48%{background-color: lightskyblue; transform: translate(220px,10px);}
+            56%{background-color: firebrick; transform: translate(180px,-40px);}
+            65%{background-color: lightslategray; transform: translate(140px,45px);}
+            74%{background-color: lawngreen; transform: translate(100px,-40px);}
+            83%{background-color: lightcoral; transform: translate(60px,45px);}
+            92%{background-color: darkblue; transform: translate(25px,-40px);}
+            100%{background-color: red; transform: translate(-15px,10px);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div><h1>Loading...</h1></div>
+        <div class="load1"></div>
+        <div class="load2"></div>
+        <div class="load3"></div>
+        <div class="load4"></div>
+        <div class="load5"></div>
+    </div>
+    <div class="pics"></div>
+    <div class="ram">
+        <div class="m1">
+            <div class="bounce l1"></div>
+            <div class="bounce l2"></div>
+            </div>
+            <div class="m2">
+                <div class="bounce l3"></div>
+            <div class="bounce l4"></div>
+            </div>
+            <div class="m3">    
+            <div class="bounce l5"></div>
+            <div class="bounce l6"></div>
+            </div>
+    </div>
+  <div class="sita">
+    <div class="sai">
+    <div class="madhu"></div>
+    <div class="krishna"></div>
+    <div class="anna"></div>
+  </div>
+</div>
+    
+</body>
+</html>
