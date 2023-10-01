@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    
+            .container{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .one div {
+            display: flex;
+           flex-direction: column;
+           background-color: orangered;
+           gap: 20px;
+           height: 1000px;
+           width: 300px;
+           position: fixed;
+           color:white;
+            padding: 60px 0px 0px 30px ;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+
+        }
+        #home{
+            margin-left: 380px;
+        }
+        #sec1{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .line{
+            border: 4px solid orangered;
+            width: 50px;
+            border-radius: 30px;
+        }
+        h2{
+            color: orangered;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .image{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 250px 250px ;
+            background-color: rgb(238, 234, 234);
+            gap: 12px;
+        }
+
+        .table{
+            /* display: grid;
+            grid-template-columns: auto auto; */
+            display: flex;
+        }
+        .table1, .table2{
+            border: 2px solid transparent;
+            background-color: rgb(238, 234, 234);
+            margin: 10px;
+            
+
+        }
+        .table1 div, .table2 div{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            /* border: 1px solid; */
+            padding: 15px 185px 15px 185px;
+        }
+       
+       
+       a:hover{
+        background-color: aliceblue;
+        border:1px solid aliceblue ;
+        height: 20px;
+        color: black;
+        margin-right: 100px;
+        padding: 10px;
+       }
+        a{
+            font-size: x-large;
+        }
+        
+    
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            
+            <div>
+                <h1>Company Name</h1>
+                
+                <i class="fa fa-navicon"></i>
+                <a href="#home">Home</a>
+                <a href="#sec1">Showcase</a>
+                <a href="#sec2">Services</a>
+                <a href="#sec3">Designers</a>
+                <a href="#sec4">Packages</a>
+                <a href="#sec5">Contact</a>
+            </div>
+        </div>
+        <div id="home">
+            <div id="sec1"></div>
+            <h1>INTERIOR DESIGN</h1>
+            <h2>Show Case</h2>
+            <div class="line"></div>
+            <div id="sec1">
+                <img src="./pics/design 1.jpg">
+                <img src="./pics/design 2.jpg">
+                <img src="./pics/design 3.jpg">
+                <img src="./pics/design 4.jpg">
+                <img src="./pics/design 5.jpg">
+                <img src="./pics/design 6.jpg">
+            </div>
+            <div id="sec2">
+                <h2>Services</h2>
+                <div class="line"></div>
+                <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="sec3">
+                <h2>Designers</h2>
+                <div class="line"></div>
+                <p>The best team in the world.</p>
+
+                    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                   <p> Our designers are thoughtfully chosen:</p>
+                   <div class="image">
+                    <div>
+                        <img src="./pics/design7.jpg" height="100" width="150"  >
+                        <h3>Jhon Doe</h3>
+                        <h4>Founder & CEO</h4>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                       
+                    </div>
+                    <div>
+                        <img src="./pics/design8.jpg"  height="100"  width="150">
+                        <h3>Jane Doe</h3>
+                        <h4>Designer</h4>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                    <div>
+                        <img src="./pics/design9.jpg"  height="100"  width="150">
+                        <h3>Mike Ross</h3>
+                        <h4>Architect</h4>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                    </div>
+            </div>
+            <div id="sec4">
+                <h2>Packages</h2>
+                <div class="line"></div>
+               <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+               <div class="table">
+                <div class="table1">
+                    <div style="background-color: dimgrey;margin-bottom: 15px;"><h3>Basic</h3></div>
+                    <div>Floor planning</div><hr>
+                    <div>10 Hours Support</div><hr>
+                    <div>Photography</div><hr>
+                    <div>20% Furniture discount</div><hr>
+                    <div>Good Deals</div><hr>
+                    <div><b>$ 199</b></div>
+                    <div style="margin-top: -40px; margin-bottom: -15px;"><p>per room</p></div><hr>
+                    <div><button style="height: 35px; width: 110px;font-size: larger;background-color: aliceblue;">Sign up</button></div>
+                </div>
+                <div class="table2">
+                    <div style="background-color: orangered;margin-bottom: 15px;"><h3>Pro</h3></div>
+                    <div>Floor planning</div><hr>
+                    <div>50 Hours Support</div><hr>
+                    <div>Photography</div><hr>
+                    <div>50% Furniture discount</div><hr>
+                    <div>Great Deals</div><hr>
+                    <div><b>$ 249</b></div>
+                    <div style="margin-top: -40px; margin-bottom: -15px;"><p>per room</p></div><hr>
+                    <div class="but"><button style="height: 35px; width: 110px;font-size: larger;background-color: orangered;">Sign up</button></div>
+                </div>
+               </div>
+               <div id="sec5">
+                <h2>Contact</h2>
+                <div class="line"></div>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                <label for="name">Name</label><br>
+                <input type="text" style="height: 30px; width: 1115px;"><br><br>
+                <label for="name">Email</label><br>
+                <input type="mail" style="height: 30px; width: 1115px;"><br><br>
+                <label for="name">Message</label><br>
+                <input type="text" style="height: 30px; width: 1115px;"><br><br><br>
+                <button style="background-color: orangered; color: white; height: 40px; width: 1123px;">Send Message</button>
+            </div>
+            <div style="background-color: royalblue;padding: 65px 0px 65px 470px; margin-top: 50px;">
+                <p>Powered By MS Creations.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
