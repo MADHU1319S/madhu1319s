@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        *{
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @media screen and (min-width:0px) and (max-width:500px) {
+            .nav{
+                /* border: 2px solid;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding-left: 40px;   */
+                display: flex;
+                gap: 50px;
+                padding-left: 50px;
+                padding-right: 150px;
+                position: fixed;
+                border: 1px solid;
+                height: 50px;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                
+            }
+            #home{
+                display: grid;
+                grid-template-columns: auto;
+                margin: 10px;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            p{
+                color: aliceblue;
+                
+            }
+            h2{
+                text-align: center;
+                font-size: 50px;
+                color: aliceblue;
+                margin-bottom: -10px;
+            }
+            h1{
+                color: aliceblue;
+            }
+            
+            .line{
+                border: 1px solid aliceblue;
+                width: 200px;
+            }
+            .skill{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+                grid-template-rows: 30px;
+            }
+            .skill1{
+                border: 1px solid white;
+                grid-column: 1/11;
+                background-color: dimgray;
+            }
+            .skill2{
+                border: 1px solid white;
+                grid-column: 11/12;
+                background-color: aliceblue;
+            }
+            .skill3{
+                border: 1px solid white;
+                grid-column: 1/10;
+                background-color: dimgray;
+            }
+            .skill4{
+                border: 1px solid white;
+                grid-column: 10/12;
+                background-color: aliceblue;
+            }
+            .skill5{
+                border: 1px solid white;
+                grid-column: 1/9;
+                background-color: dimgray;
+            }
+            .skill6{
+                border: 1px solid white;
+                grid-column: 9/12;
+                background-color: aliceblue;
+            }
+            .list{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid white;
+                margin: 50px 0px 50px 0px;
+            }
+            .list div{
+                background-color: aliceblue;
+            }
+            h4{
+                background-color: aliceblue;
+                text-align: center;
+            }
+            .resume{
+                background-color: aliceblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+            .details div{
+                margin-left: 20px;
+                padding: 10px;
+            }
+            .forms{
+                display: grid;
+                gap: 15px;
+            }
+            input{
+                padding: 10px;
+                background-color: aliceblue;
+                margin-left: -20px;
+            }
+            .logos{
+                margin-left: 30px;
+            }
+            
+        }
+        @media screen and (min-width:501px) {
+            .nav{
+                /* border: 2px solid;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding-left: 40px;   */
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                padding: 50px;
+                height: 1000px;
+                position: fixed;
+                border: 1px solid;background-color: black;
+                align-items: center;
+            }
+            .nav i{
+                color: aliceblue;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                
+            }
+            #home, #about, #photos, #contact{
+                margin-left: 220px;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            p{
+                color: aliceblue;
+                
+            }
+            h2{
+                text-align: center;
+                font-size: 50px;
+                color: aliceblue;
+                margin-bottom: -10px;
+            }
+            h1{
+                color: aliceblue;
+            }
+            
+            .line{
+                border: 1px solid aliceblue;
+                width: 200px;
+            }
+            .skill{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+                grid-template-rows: 30px;
+                padding-left: 20px;
+            }
+            .skill1{
+                border: 1px solid white;
+                grid-column: 1/11;
+                background-color: dimgray;
+            }
+            .skill2{
+                border: 1px solid white;
+                grid-column: 11/12;
+                background-color: aliceblue;
+            }
+            .skill3{
+                border: 1px solid white;
+                grid-column: 1/10;
+                background-color: dimgray;
+            }
+            .skill4{
+                border: 1px solid white;
+                grid-column: 10/12;
+                background-color: aliceblue;
+            }
+            .skill5{
+                border: 1px solid white;
+                grid-column: 1/9;
+                background-color: dimgray;
+            }
+            .skill6{
+                border: 1px solid white;
+                grid-column: 9/12;
+                background-color: aliceblue;
+            }
+            .list{
+               display: grid;
+               grid-template-columns: auto auto;
+               margin: 80px 0px 50px 0px;
+            }
+            .list div{
+                background-color: aliceblue;
+                padding: 50px;
+                font-size: xx-large;
+            }
+            h4{
+                background-color: aliceblue;
+                text-align: center;
+            }
+            .resume{
+                background-color: aliceblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+            #gallery{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+                grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+            }
+            .d1{
+                grid-row: 1/4;
+                grid-column: 1/6;
+            }
+            .d2{
+                grid-row: 1/6;
+                grid-column: 6/11;
+            }
+            .d3{
+                grid-row: 4/12;
+                grid-column: 1/6;
+            }
+            .d4{
+                grid-row: 6/9;
+                grid-column: 6/11;
+            }
+            .d5{
+                grid-row: 9/12;
+                grid-column:6/11 ;
+            }
+            .d6{
+                grid-row:12/15 ;
+                grid-column: 1/6;
+            }
+            .d7{
+                grid-row:12/15 ;
+                grid-column: 6/11;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            .details div{
+                margin-left: 20px;
+                padding: 10px;
+            }
+            .forms{
+                display: grid;
+                gap: 15px;
+            }
+            input{
+                padding: 10px;
+                background-color: aliceblue;
+                margin-left: -20px;
+                font-size: larger;
+            }
+            .logos{
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#photos">Photos</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="home">
+            <h2>John Doe</h2>
+            <p style="text-align: center;">PhotoGrapher and Web Designer</p> <br> <br>
+            <img src="./pics/profile1.jpg">
+        </div>
+        <div id="about">
+            <br><br>
+            <h1>My Name</h1>
+            <div class="line"></div>
+            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br><h1>My Skills</h1>
+            <div class="line"></div>
+            <p>PhotoGraphy</p>
+            <div class="skill">
+                <div class="skill1"></div>
+                <div class="skill2"></div>
+            </div>
+            <p>Web Design </p>
+            <div class="skill">
+                <div class="skill3"></div>
+                <div class="skill4"></div>
+            </div>
+            <p>PhotoShop</p>
+            <div class="skill">
+                <div class="skill5"></div>
+                <div class="skill6"></div>
+            </div>
+            <div class="list">
+                <div><h4>11+</h4>
+                    <p style="background-color: aliceblue; color: black; text-align: center;"> Partners</p></div>
+                 <div><h4>55+</h4>
+                     <p style="background-color: aliceblue; color: black; text-align: center;">Projects Done</p></div>
+                    <div><h4>89+</h4>
+                        <p style="background-color: aliceblue; color: black; text-align: center;"> Happy Clients</p></div>
+                     <div><h4>150+</h4>
+                       <p style="background-color: aliceblue; color: black; text-align: center;">  Meetings</p></div>
+            </div>
+            <div class="resume">
+                <i class="fa fa-download" style="background-color: aliceblue;padding: 10px; font-size: larger;"></i>
+                Download Resume
+            </div>
+        </div>
+<br><br><br><br><br><br>
+        <div id="photos"><br><br>
+            <h1>My PhotoGraphy</h1>
+            <div class="line"></div>
+            <br><br>
+            <div id="gallery">
+                <div class="d1"><img src="./pics/profile4.jpg"></div>
+                <div class="d2"><img src="./pics/profile5.jpg"></div>
+                <div class="d3"><img src="./pics/profile6.jpg"></div>
+                <div class="d4"><img src="./pics/profile7.jpg"></div>
+                <div class="d5"><img src="./pics/profile8.jpg"></div>
+                <div class="d6"><img src="./pics/profile9.jpg"></div>
+                <div class="d7"><img src="./pics/profile10.jpeg"></div>
+            </div>
+         </div>
+<br><br><br><br><br>
+        <div id="contact"><br><br>
+            <h1>Contact Us</h1>
+            <div class="line"></div>
+            <br><br>
+            <div class="details">
+                <div>
+                    <i class="fa fa-map-marker" style="color: aliceblue; font-size: x-large;">  Chicago, US</i>
+                </div>
+                <div>
+                    <i class="fa fa-phone" style="color: aliceblue; font-size: x-large;">  Phone : +52316432</i>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" style="color: aliceblue; font-size: x-large;">  Email - johndoe@gmail.com</i>
+                </div>
+                <br><br><br>
+                <div>
+                    <p>lets Get in Touch. Send me A message</p>
+                    <div class="forms">
+                    <input type="text" name="name" placeholder="name">
+                    <input type="mail" placeholder="Email">
+                    <input type="text" placeholder="subject">
+                    <input type="text" placeholder="message">
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+           <div class="logos">
+            <div>
+                <i class="fa fa-facebook" style="color: aliceblue;"></i>
+                <i class="fa fa-instagram" style="color: aliceblue;"></i>
+                <i class="fa fa-snapchat" style="color: aliceblue;"></i>
+                <i class="fa fa-picsart" style="color: aliceblue;"></i>
+                <i class="fa fa-twitter" style="color: aliceblue;"></i>
+                <i class="fa fa-linkedin" style="color: aliceblue;"></i>
+            </div>
+            <div>
+                <p>Powered By MS-Creations</p>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
