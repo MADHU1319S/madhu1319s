@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+</head>
+<body>
+    <script>
+        //even odd numbers
+        var i=prompt("give a number")
+        if(i%2==0){
+            alert("it is a even number")
+        }
+        else{
+           alert ("it is a odd number")
+        }
+
+
+
+        //leap year check
+        var i=prompt("give any year")
+        if(i%4==0){
+            alert("it is a leap year")
+        }
+        else{
+            alert("it is not a leap year")
+        }
+
+
+
+        //find largest number
+        var i=prompt("give 1st number")
+        var j=prompt("give 2st number")
+        var k=prompt("give 3st number")
+         if(i>0 && k>0 && j>0){
+
+        if(i>j && i>k){
+        alert(i+" is greater than "+j+" "+k)
+        }
+        else if(j>k && j>i){
+            alert(j+" is greater than "+i+" "+k)
+        }
+        else if(k>i && k>j){
+            alert(k+" is greater than "+i+ " " +j)
+        }
+        else if(i==j&&j==k){
+            alert("all are equal")
+        }
+        }  
+        else {
+            alert ("please give only possitive inputs")
+        }
+
+
+
+        //time of the day
+        var i=prompt("give time as input")
+        if(i<=24){
+            if (i>=6 && i<=11){
+                alert("good mornig")
+            }
+            else if(i>=12 && i<=17){
+                alert("good afternooon")
+            }
+            else if(i>=18 && i<=23){
+                alert("good evening")
+            }
+        }
+        else{
+            alert("give time between 0-24 only ")
+        }
+
+
+
+                                                // currency converter
+                                                // var i=+prompt("enter the amount")
+                                                // var j=prompt("from the currency")
+                                                // var k=prompt("To the currency")
+                                                // switch(i){
+                                                //     case "j==usd":
+                                                //     case"k==rupee": alert(i*77);
+                                                //     break;
+                                                //     default:alert("ivalid input")
+                                                // }
+
+
+
+
+        //currency converter
+            var i=+prompt("enter the amount")
+            var j=prompt("from the currency")
+            var k=prompt("To the currency")
+           if("j==usd&&k==rupee"){
+            alert(i*77)
+           }
+           else if("j==dinar&&k==rupee"){
+            alert(+i*46)
+           }
+           else{
+            alert("give proper input")
+           }
+
+
+
+        //traffic signals
+        var a=prompt("give a signal")
+        switch(a){
+            case "red":alert("stop man");
+            break;
+            case "orange":alert("get ready");
+            break;
+            case "green":alert("lets gooo");
+            break;
+            default:alert("give valid input");
+
+        }
+
+
+
+        //seasons
+        var a=prompt("give a month name")
+        switch(a){
+            case "jan":alert("spring season");
+            break;
+            case "feb":alert("spring season");
+            break;
+            case "mar":alert("spring season");
+            break;
+            case "apr":alert("summer season");
+            break;
+            case "may":alert("summer season");
+            break;
+            case "jun":alert("summer season");
+            break;
+            case "jul":alert("autumn season");
+            break;
+            case "aug":alert("autumn season");
+            break;
+            case "sep":alert("autumn season");
+            break;
+            case "oct":alert("winter season");
+            break;
+            case "nov":alert("winter season");
+            break;
+            case "dec":alert("winter season");
+            break;
+            default:alert("give month name as jan/feb/mar")
+        }
+
+
+        //options
+        var a=+prompt("enter option from 1 to 4")
+        switch(a){
+            case 1:alert("option 1 is selected");
+            break;
+            case 2:alert("option 2 is selected");
+            break;
+            case 3:alert("option 3 is selected");
+            break;
+            case 4:alert("option 4 is selected");
+            break;
+            default:alert(" select option between 1-4");
+        }
+     </script>
+</body>
+</html>
