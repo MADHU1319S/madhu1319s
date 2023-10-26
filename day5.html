@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+</head>
+<body>
+    <script>
+        debugger
+        document.write("number patttern using for loops<br> ")
+        function print3(){
+           for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(j," ")
+            }
+            document.write('<br>')
+           }
+        }
+        print3()
+
+        
+        document.write("reverse number-patttern using for loops<br> ")
+        function print4(){
+            for(i=5;i>=1;i--){
+                for(j=1;j<=i;j++){
+                    document.write(j)
+                }
+            document.write('<br>')
+            }
+        }
+        print4()
+
+
+
+        document.write(" reverse patttern using single for loop<br> ")
+        function print1(){
+            var a="* "
+            for(i=5;i>=1;i--){
+               document.write(a.repeat(i),"<br>")
+            }
+        }
+        print1()
+
+
+        document.write("patttern using single for loop<br> ")
+        function print2(){
+            var a="* "
+            for(i=1;i<=5;i++){
+                document.write(a.repeat(i),"<br>")
+            }
+        }
+        print2()
+
+
+
+        document.write("functions<br>")
+        function print5(a){
+            for(i=1;i<=a;i++){
+                for(j=1;j<=i;j++){
+                    document.write(j)
+                }
+                document.write('<br>')
+            }
+        }
+        print5(8)
+
+        document.write("strings practice")
+        var str1="madhu";
+        var str2="devunuri"
+        document.write(str1.length,"<br>")
+        document.write(str1[0],"<br>")
+        var str3=str1+" "+str2;
+        document.write(str3,"<br>")    
+        document.write("without .lenght<br>",[...str1].reduce(a => a+1, 0));
+       
+
+
+     </script>
+</body>
+</html>

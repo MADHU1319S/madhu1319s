@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+</head>
+<body>
+    <script>
+        document.write("string methods::: <br> <br>")
+
+
+        document.write("str.slice :: it takes negative values <br>")
+        let str="madhu devunuri"
+        let b=str.slice(1,-1)
+        document.write(b,"<br><br>")
+
+        document.write("str.substring::: it takes negative values as 0 <br>")
+        let str1="madhu devunuri";
+        let b1=str1.substring(10,-5)
+        document.write(b1,"<br><br>")
+
+        document.write("str.substr::: first one is start one second is no.of chatacters from it <br>")
+        let str2="madhu devunuri";
+        let b2=str2.substr(10,5)
+        document.write(b2,"<br><br>")
+
+        document.write("str.replace::: it replace the one word/char in the given string<br>")
+        let str3="madhu devunuri";
+        let b3=str3.replace("madhu","sai")
+        document.write(b3,"<br><br>")
+
+        document.write("str.replaceall::: it replace the all word/char in the given string<br>")
+        let str4="madhu devunuri madhu";
+        let b4=str4.replaceAll("madhu","sai")
+        document.write(b4,"<br><br>")
+
+        document.write("str.toUpperCase::: it converts to uppercase from  given string<br>")
+        let str5="madhu devunuri";
+        let b5=str5.toUpperCase()
+        document.write(b5,"<br><br>")
+
+        document.write("str.tolowerCase::: it converts to lowercase from  given string<br>")
+        let str6="MADHU DEVUNURI";
+        let b6=str6.toLowerCase()
+        document.write(b6,"<br><br>")
+
+        document.write("str.concat::: it concats given 2 strings<br>")
+        let str7="madhu";
+        let strr="devunuri"
+        let b7=str7.concat(" ",strr)
+        document.write(b7,"<br><br>")
+
+        document.write("str.trim::: it trims given  string gap/space either start or end or both<br>")
+        let str8="      madhu     ";
+        let b8=str7.trim()
+        document.write(b8,"<br><br>")
+        let str81="      madhu";
+        let b81=str81.trimStart()
+        document.write(b81,"<br><br>")
+        let str82="madhu     ";
+        let b82=str82.trimEnd()
+        document.write(b82,"<br><br>")
+
+        document.write("str.pad start/end::: it adds padding before/after the strings<br>")
+        let str9="madhu";
+        let b9=str9.padStart(22,"po")
+        document.write(b9,"<br><br>")
+        let str91="madhu";
+        let b91=str91.padEnd(12,"po")
+        document.write(b91,"<br><br>")
+
+        document.write("str.tostring::: it converts given number into strings<br>")
+        let str10=9;
+        let b10=str10.toString()
+        document.write(b10,"<br><br>")
+
+        document.write("str.charat::: it gives index values same as index<br>")
+        let str11="madhu";
+        let b11=str11.charAt(1)
+        document.write(b11,"<br><br>")
+
+        document.write("str.charcodeat::: it gives unicode of given index value <br>")
+        let str12="madhu";
+        let b12=str12.charCodeAt(1)
+        document.write(b12,"<br><br>")
+
+        document.write("str.property::: it gives index values same as index<br>")
+        let str13="madhu";
+        let b13=str13[2]
+        document.write(b13,"<br><br>")
+
+        document.write("str.split::: it converts string into an array<br>")
+        let str14="madhu";
+        let b14=str14.split("")
+        document.write(b14,"<br><br>")
+        let str15="m,a,d,h,u";
+        let b15=str15.split(",")
+        document.write(b15[3],"<br><br>")
+
+        document.write("NOTE::: here we have a thing can use in place of concatination<br>")
+        let str17=3;
+        let b16=8
+        let total=str17+b16;
+        document.write(`sum of ${str17} and ${b16} is ${total}<br><br>`)
+
+        document.write("string to object::: it converts string to object type<br>")
+        let str18="madhu";
+        let b18=new String("madhu")
+        document.write(typeof b18,"<br><br>")
+
+        document.write("index of string<br>")
+        let str19=" devunuri madhu devunuri madhu";
+        let b19=str19.indexOf("madhu")
+        document.write(b19,"<br>")
+        let b191=str19.indexOf("madhu",12)
+        document.write(b191,"<br>")
+        let b192=str19.indexOf("john")
+        document.write(b192,"<br><br>")
+
+
+        document.write("lastindex of string<br>")
+        let str20="devunuri madhu devunuri madhu";
+        let b20=str20.lastIndexOf("madhu")
+        document.write(b20,"<br>")
+        let b201=str20.lastIndexOf("madhu",12)
+        document.write(b201,"<br>")
+        let b202=str20.lastIndexOf("john")
+        document.write(b202,"<br><br>")
+
+        
+        document.write("search of string<br>")
+        let str21="devunuri madhu devunuri madhu";
+        let b21=str21.search("madhu")
+        document.write(b21,"<br><br>")
+
+
+        document.write("match of string<br>")
+        let str22="devunuri madhu devunuri MADHU madhu";
+        let b22=str22.match("madhu")
+        document.write(b22.length,b22,"<br>")
+        let b221=str22.match(/madhu/g)       //global
+        document.write(b221.length,b221,"<br>")
+        let b222=str22.match(/madhu/gi)         //global insensitive
+        document.write(b222.length,b222,"<br><br>")
+
+
+        document.write("matchAll of string<br>")
+        let str23="devunuri madhu devunuri MADHU madhu";
+        let b23=str23.matchAll("madhu")
+        document.write(Array.from(b23),"<br>")
+        let b2223=str22.matchAll(/madhu/gi)         //global insensitive
+        document.write(Array.from(b2223),"<br><br>")
+        
+
+        document.write("includes method of string<br>")//gives true flase
+        let str24="devunuri madhu welcome home";
+        let b24=str24.includes("home")
+        document.write(b24,"<br>")
+        let str241="devunuri madhu welcome home";
+        let b241=str24.includes("madhu",15)
+        document.write(b241,"<br><br>")
+
+
+        document.write("startswith method of string<br>")//gives true flase
+        let str25="devunuri madhu welcome home";
+        let b25=str25.startsWith("devu")
+        document.write(b25,"<br>")
+        let b242=str24.startsWith("madhu")
+        document.write(b242,"<br>")
+        let b243=str24.startsWith("madhu",9)
+        document.write(b243,"<br><br>")
+
+
+        document.write("endswith method of string<br>")//gives true flase
+        let str26="devunuri madhu welcome home";
+        let b26=str26.endsWith("home")
+        document.write(b26,"<br>")
+        let b244=str24.endsWith("madhu")
+        document.write(b244,"<br>")
+        let b245=str24.endsWith("madhu",14)
+        document.write(b245,"<br>")
+    </script>
+</body>
+</html>

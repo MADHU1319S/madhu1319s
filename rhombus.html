@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhombus</title>
+</head>
+<body>
+    <script>
+// function pattern(a){
+//     for(i=1;i<=a;i++){
+//         for(j=0;j<(a-i);j++){
+//             document.write("&nbsp;&nbsp;")
+//         }
+//         for(k=0;k<i;k++){
+//             document.writeln("*&nbsp;")
+//         }
+//         document.write("<br>")
+//     }
+//     for(i=1;i<a;i++){
+//         for(k=0;k<i;k++){
+//             document.write("\u00A0\u00A0")
+//         }
+//         for(j=0;j<(a-i);j++){
+//             document.writeln("*\u00A0")
+//         }
+//         document.write("<br>")
+//     }
+// }
+// pattern(6)
+function madhu(a){
+    for(i=1;i<=a;i++){
+        for(k=1;k<=(a-i);k++){
+            document.write("\u00A0\u00A0")
+        }
+        for(j=1;j<=i;j++){
+        document.writeln("*\u00A0")
+        }
+        document.write('<br>')
+    }
+    for(i=(a-1);i>=1;i--){
+        for(k=1;k<=(a-i);k++){
+            document.write("\u00A0\u00A0")
+        }
+        for(j=1;j<=i;j++){
+            document.writeln("*\u00A0")
+        }
+        document.write('<br>')
+    }
+}
+madhu(8)
+document.write("<br><br><br>")
+
+
+function sai(a){
+    for(i=a;i>=1;i--){
+        for(j=1;j<=i;j++){
+            document.write("*\u00A0")
+        }
+        for(k=1;k<=(a-i);k++){
+            document.write("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0")
+        }
+        for(l=1;l<=i;l++){
+            document.write("*\u00A0")
+        }
+        document.write("<br>")
+    }
+    for(i=1;i<=a;i++){
+        for(j=1;j<=i;j++){
+            document.write("*\u00A0")
+        }
+        for(j=1;j<=(a-i);j++){
+            document.write("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0")
+        }
+        for(l=1;l<=i;l++){
+            document.write("*\u00A0")
+        }
+        document.write("<br>")
+    }
+
+}
+sai(8)
+
+
+    //checking whether it is valid emaqil or not
+        let p=prompt("enter your mail id")
+        if(/^[a-z]/.test(p)&&/^[0-9]/.test(p)&&p.endsWith("@gmail.com")){
+            alert("Valid email address")
+        }
+        else{
+            alert("Invalid email address")
+        }
+
+       </script> 
+</body>
+</html>

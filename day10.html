@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10</title>
+</head>
+<body>
+    <script>
+        document.write("Filter method<br>")
+        const array=[2,3,5,6,7,8]
+        let newarray=array.filter((x)=>
+        {
+            return x>4;
+        })
+        document.write(newarray,"<br><br>")
+
+        
+
+        document.write("map method<br>")
+        const array1=[2,3,5,6,7,8]
+        let newarray1=array1.map((x)=>
+        {
+            return x>4;
+        })
+        document.write(newarray1,"<br><br>")
+
+
+
+        document.write("for each method<br>")
+        const array2=[2,3,5,6,7,8]
+        array2.forEach((y)=>
+        {
+            document.write((y+3),"<br><br>")
+        })
+
+
+
+        document.write("reduce method<br>")
+        const array3=[2,3,5,6,7,8]
+        let newarray3=array3.reduce((accu,ele,ind,arr)=>
+        {
+            return ele+accu;
+        },4)
+        document.write(newarray3,"<br>")
+        const array4=[2,3,5,6,7,8]
+        let newarray4=array4.reduce((accu,ele,ind,arr)=>
+        {
+            return Math.max(ele,accu);
+        },4)
+        document.write(newarray4,"<br><br>")
+
+
+
+        
+        document.write("find method<br>")
+        const array5=[2,3,5,6,7,8]
+        let newarray5=array5.find((x)=>
+        {
+            return x>4;
+        })
+        document.write(newarray5,"<br><br>")
+
+
+
+
+        document.write("MATH OBJECT FUNCTIONS<br><br>")
+        document.write("some predefined values<br>")
+        //document.write(Math.PI)
+        document.write(Math.PI,"<br>")
+        //document.write(Math.E)
+        document.write(Math.E,"<br>")
+        //document.write(Math.SQRT2,"<br>")
+        document.write(Math.SQRT2,"<br>")
+        // document.write(Math.SQRT1_2)
+        document.write(Math.SQRT1_2,"<br><br>")
+
+        document.write(" Math round - takes near round figure values<br>")
+        document.write(Math.round(4.2),"<br>")
+        document.write(Math.round(4.6),"<br>")
+
+        document.write(" Math ceil- takes higher round figure values<br>")
+        document.write(Math.ceil(4.2),"<br>")
+        document.write(Math.ceil(4.6),"<br>")
+
+        document.write(" Math floor - takes lowest values<br>")
+        document.write(Math.floor(4.2),"<br>")
+        document.write(Math.floor(4.6),"<br>")
+
+        document.write(" Math trunc - it removes decimals<br>")
+        document.write(Math.trunc(4.2),"<br>")
+        document.write(Math.trunc(-4.6),"<br>")
+
+        document.write(" Math pow - gives square values in arguments 1st one is number 2nd one is no.of square root<br>")
+        document.write(Math.pow(4,2),"<br>")
+        document.write(Math.pow(7,4),"<br>")
+
+        document.write(" Math sqrt - gives square root values of an given numbers<br>")
+        document.write(Math.sqrt(64),"<br>")
+        document.write(Math.sqrt(900),"<br>")
+
+        document.write(" Math abs- converts negative values into possitive<br>")
+        document.write(Math.abs(-4.2),"<br>")
+        document.write(Math.abs(-12.6),"<br>")
+
+        document.write(" Math min & max- gives lowest value & highest values<br>")
+        document.write(Math.min(4,1,4,5,8,9),"<br>")
+        document.write(Math.max(4,6,7,1,9,9),"<br>")
+
+        document.write(" Math random - everytime gives random values<br>")
+        document.write(Math.random(),"<br><br>")
+
+        document.write("sample program for 6digit password<br>")
+        let OTP=(Math.random()*1000000)
+        document.write(Math.trunc(OTP),"<br>")
+        document.write(Math.floor(OTP),"<br>")
+        document.write(Math.ceil(OTP),"<br>")
+        document.write(Math.round(OTP),"<br>")
+    </script>
+</body>
+</html>

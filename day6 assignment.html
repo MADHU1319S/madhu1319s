@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 assignment</title>
+</head>
+<body>
+    <h4>1.in given string "hello hyderabad welcome" print only hyderabad in uppercase </h4>
+    <script>
+    var str="hello hyderabad welcome";
+    var s=str.slice(6,15)
+    var m=s.toUpperCase()
+    document.write(m)
+    </script>
+    <hr>
+    <h4>2.convert the given string "there is a monster" into "there is a villain "</h4>
+    <script>
+        var str="there is a monster";
+        var a=str.replace("monster","villain")
+        document.write(a)
+    </script>
+        <hr>
+    <h4>3.find the length of given string  "ten thousand coders"</h4>
+    <script>
+        var str="ten thousand coders"
+        var a=str.length
+        document.write(a)
+    </script>
+        <hr>
+    <h4>4.add any two strings without using  '+' operator</h4>
+    <script>
+        var str="madhu"
+        var str2="devunuri"
+        var a=str.concat(" ",str2)
+        document.write(a)
+    </script>
+        <hr>
+    <h4>5.reverse a string "user interface"</h4>
+    <script>
+        var str="user interface"
+        var b=''
+        var n=str.length-1;
+        for(i=n;i>=0;i--){
+            b+=str[i]
+        }
+        document.write(b)
+    </script>
+    <hr>
+    <h4>6.remove the side spaces and convert it into lowercase ".......FRONT-END DEVELOPER......."</h4>
+    <script>
+        var str="     FRONT-END DEVELOPER     "
+        var a=str.trim()
+        var b=a.toLowerCase()
+        document.write(b)
+    </script>
+    <hr>
+    <h4>7.count how many spaces in the string " ten thousand coders KPHB "</h4>
+    <script>
+        var str=" ten thousand coders KPHB "
+        var space=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]==' ')
+            space++;
+        }
+        document.write(" ",space)
+    </script>
+    <hr>
+    <h4>8.count how many '0's in the number 4006003005</h4>
+    <script>
+        var a=4006003005
+        var str=a.toString();
+        var count=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]==0)
+            count++;
+        }
+        document.write(" ",count)
+    </script>
+    <hr>
+    <h4>9.convert numbers 2002,3003,4004 into strings</h4>
+    <script>
+        var a=2002;
+        var b=3003;
+        var c=4004;
+        var str1=a.toString()
+        document.write(str1+b+c)
+    </script>
+    <hr>
+    <h4>10.finding the vowels count in a string " happy birthday to you"</h4>
+    <script>
+        // var str="happy birthday to you"
+       let owels=(str)=>{
+        var count=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+            count++;
+        }
+        document.write(count)
+       }
+       owels("happy birthday to you")
+    </script>
+    <hr>
+    <h4>11.find unicodes for String "madhu"</h4>
+    <script>
+        var s="madhu";
+        document.write("m----",s.charCodeAt(0),"<br>")
+        document.write("a-----",s.charCodeAt(1),"<br>")
+        document.write("d----",s.charCodeAt(2),"<br>")
+        document.write("h----",s.charCodeAt(3),"<br>")
+        document.write("u----",s.charCodeAt(4),"<br>")
+    </script>
+    <hr>
+    <h4>12.convert a string into an array </h4>
+    <script>
+        let str14="madhu";
+        let b14=str14.split("")
+        document.write(str14,"-------> ",b14,"<br><br>")
+    </script>
+    <hr>
+    <h4>13.find the indexOf any string </h4>
+    <script>
+        let str19="indian player virat. virat is a best player";
+        let b19=str19.indexOf("virat")
+        document.write("indian player virat. virat is a best player ----- index is ",b19,"<br>")
+    </script>
+    <h4>14.find how many "ine"s in the string "the wine is made with pine & its mine"</h4>
+    <script>
+        var str="the wine is made with pine & its mine INE"
+        var s=str.match(/ine/gi)
+        document.write(s.length," ---",s)
+    </script>
+    <hr>
+    <h4>15.check below strings are palindrome or not "asarosa" "enimine"</h4>
+    <script>
+        var str="asarosa"
+        var b=''
+        var a=str.length-1;
+        for (i=str.length-1;i>=0;i--){
+            b+=str[i]
+        }
+        if(str==b){
+            document.write("asarosa-------it is a palindrome")
+        }
+        else{
+            document.write("asarosa--------it is not a palindrome")
+        }
+        document.write("<br>")
+        var str="enimine"
+        var b=''
+        var a=str.length-1;
+        for (i=str.length-1;i>=0;i--){
+            b+=str[i]
+        }
+        if(str==b){
+            document.write("enimine-------it is a palindrome")
+        }
+        else{
+            document.write("enimine-------it is not a palindrome")
+        }
+    </script>
+    <hr>
+    <h4>16.find the count of "a" in the "adilabad"</h4>
+    <script>
+        var str="adilabad"
+        var count=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]=='a')
+            count++
+        }
+        document.write(count)
+    </script>
+    <hr>
+    <h4>17.find the count of consonents in the string "bharath is my country"</h4>
+    <script>
+        var str="bharath is my country"
+        var count=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]=='a'||str[i]=='i'||str[i]=='o'||str[i]=='e'||str[i]=='u')
+            count++;
+        }
+        document.write(str.length-count)
+    </script>
+    <hr>
+    <h4>18.just display "int famil" in the string "we are in joint family"</h4>
+    <script>
+        var str="we are in a joint family"
+        var s=str.substr(14,9)
+        document.write(" ",s)
+    </script>
+    <hr>
+    <h4>19.convert a string into object</h4>
+    <script>
+        var str18="madhu";
+        var b18=new String("madhu")
+        document.write(str18," is a ", typeof b18)
+    </script>
+    <hr>
+    <h4>20.check whether "india" is present in the string "the famous director rajamouli belongs to india" </h4>
+    <script>
+        var str="the famous director rajamouli belongs to india"
+        var s=str.includes("india")
+        document.write(s)
+    </script>
+    +khgduytrew
+</body>
+</html>

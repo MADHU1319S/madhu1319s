@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9</title>
+</head>
+<body>
+    <script>
+        document.write("for in loop in objects<br>")
+        const objects={
+            name:"madhu",
+            id:1234,
+        }
+            for(x in objects){
+            document.write(x," ")
+            document.write(objects[x],"<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("for of& for in loop in arrays<br>")
+        const array=["madhu",1,4,5]
+            for(a in array){
+            document.write(a)
+        }
+        document.write(" for in<br>")
+        for(b of array){
+            document.write(b)
+        }
+        document.write(" for of<br><br>")
+
+        document.write("join method is convers the array into string <br>")
+        const array1=["madhu",6,"alu"]
+        let s=array1.join("*&")
+        document.write(s,"----")
+        document.write(typeof s,"<br>")
+
+        document.write("split method is converts the string into array <br>")
+        const str="madhu is good boy"
+        let k=str.split(" ")
+        document.write(k,"---")
+        document.write(typeof k,"<br><br>")
+
+
+        document.write("to find the length of the object<br>")
+        const obj={
+            name:"madhu",
+            id:1234,
+            class:"A"
+        }
+        var a=Object.keys(obj)
+        document.write(a.length,"<br><br>")
+
+
+        document.write("CALL BACK FUNCTIONS<br>")
+        document.write("A callback is a function passed as an argument to another function This technique allows a function to call another function A callback function can run after another function has finished<br><br>")
+        document.write("Arrow functions<br>")
+        //function_name=(parameter/argument)=>{
+        //               }
+        //shorthand    is ()=>{  }
+        let madhu=(a,b)=>{
+           c=a*b;
+        }
+        madhu(10,2)
+        document.write (c,"<br><br>");
+        
+        
+
+        document.write("call back<br>")
+        function mine(one,two){
+            return "madhu "+one+" "+two;
+        }
+        function nope(){
+            return "sai"
+        }
+        function soap(){
+            return "venkat"
+        }
+        document.write(mine(soap(),nope()),"<br><br>")
+
+
+        document.write("arrays in call back<br>")
+        let array2=[1,2,3,4,5]
+        function operation(){
+            let result=[]
+            for(x of array2){
+                result.push(x*x)
+            }
+            return result;
+        }
+        document.write(operation(array2),"<br><br>")
+
+
+        document.write("arrays in functions call back<br>")
+        let array3=[1,2,3,4,5]
+        function operations(array3,chf,cbf){
+            let resultt=[]
+            for(z of array3){
+                resultt.push(chf(z))
+                resultt.push(cbf(z))
+            }
+            return resultt;
+        }
+        function square(z){
+            return(z*z)
+        }
+        function cube(z){
+            return(z*z*z)
+        }
+        document.write(operations(array3,cube,square),"<br><br>")
+
+
+
+
+        document.write("MAP FUNCTIONS<BR> it iterates the array and creates new array from existing array , by using function we can perform the tasks here<br>")
+        const arrayy=[64,36,49,16];
+        let newarr=arrayy.map(Math.sqrt)
+        document.write(newarr,"<br>")
+
+        const arrm=[5,9,4,7]
+        let newarrm=arrm.map(function(num){return num*10})//in function parameters we have current value, index and array
+        document.write(newarrm,"<br>")
+
+        const arey=[4,6,7,3]
+        let kotha=arey.map((num)=>{return num*num})//it is arrow functions
+        document.write(kotha,"<br>")
+
+        const orey=[77,66,88,55]
+        let patha=orey.map(RMP) //its done by using function outside
+        document.write(patha)
+            function RMP(num){
+                return num-39;
+            }
+        
+
+    </script>
+</body>
+</html>

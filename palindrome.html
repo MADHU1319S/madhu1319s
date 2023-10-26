@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        var a="tenett";
+        var n=a.length-1;
+        var i,j;
+        for(i=0;i<=n;i++){
+           
+        s=a[i];
+        }
+        for(j=n;j>=0;j--){
+        d=a[j];
+        }   
+        
+        if(s==d){
+                document.write("it is palindrome");
+            }
+        else{
+                document.write("it is not a palindrome");
+        }
+
+
+
+        var str1="radar";
+        var a='';
+        for(i=0;i<=str1.length-1;i++){
+            a+=str1[i];
+        }
+        document.write(a,"<br>")
+
+        var str1="radar";
+        var b='';
+        for(i=str1.length-1;i>=0;i--){
+            b+=str1[i];   
+        
+        }
+        //  document.write(b,"<br>")
+
+         if(str1==b){
+            document.write("it is palindrome")
+        }
+        else{
+            document.write("not palindrome")
+        }
+
+        document.write("<br>")
+
+
+
+        var str="levtvel"
+        // var b=true;
+        for(i=0;i<str.length/2;i++){
+            if(str[i]==str[str.length-1-i]){
+                b=true;
+           }
+           else{
+            b=false;
+           }
+           
+        }
+        if(b){
+
+        document.write("it is palindrome");
+        }
+        else{
+        document.write("it is not a palindrome");
+        }
+
+
+
+
+
+        
+        document.write("<br> number of zeros in the input<br>")
+
+        var a=2002;
+        var str=a.toString();
+        var count=0;
+        for(i=0;i<=str.length-1;i++){
+            if(str[i]==0)
+                count++;
+        }
+        document.write(count)
+    </script>
+</body>
+</html>

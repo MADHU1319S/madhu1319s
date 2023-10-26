@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+</head>
+<body>
+    <script>
+        document.write("Spaces and line breaks are not important. A declaration can span multiple lines<br>")
+        const cars = [
+        "Saab",
+        "Volvo",
+        "BMW"
+        ];
+        document.write(cars,"<br><br>")
+
+
+        document.write("You can also create an array, and then provide the elements:<br>")
+        const carss = [];
+        carss[0]= "Saab";
+        carss[1]= "Volvo";
+        carss[2]= "BMW";
+        document.write(carss,"<br><br>")
+
+
+        document.write("index of array<br>")
+        const carrs = ["Saab", "Volvo", "BMW"];
+        let car = carrs[0];
+        document.write(car,"<br><br>")
+
+
+        document.write("changing an array element<br>")
+        const lor = ["Saab", "Volvo", "BMW"];
+        lor[0] = "Opel";
+        document.write(lor,"<br><br>")
+
+
+        document.write("array to string <br>")
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let s=fruits.toString();
+        document.write(s,"<br><br>")
+
+
+        document.write("accessing array object<br>")    
+        const person = {firstName:"John", lastName:"Doe", age:46};
+        document.write(person.firstName,person,"<br><br>")
+
+
+        document.write("array length<br>")
+        const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+        let length = fruitss.length;
+        document.write(length,"<br><br>")
+
+
+        document.write("accessing last element in a array<br>")
+        const fruitts = ["Banana", "Orange", "Apple", "Mango"];
+        let fruit = fruitts[fruits.length - 1];
+        document.write(fruit,"<br><br>")
+
+
+        document.write("creating array using constructor<br>")
+        var points = new Array(40, 100, 1);
+        document.write(points,"<br><br>")
+
+
+        document.write("type of an array <br>")
+        const fruiits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(typeof fruiits,"<br><br>")
+
+
+        
+        document.write("to check whether it is  an array <br>")
+        const fruuiits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(Array.isArray(fruiits),"<br><br>")
+        
+ 
+        document.write("The instanceof operator returns true when used on an array<br>")
+        const m= ["Banana", "Orange", "Apple", "Mango"];
+        document.write(m instanceof Array,"<br><br>")
+
+
+        document.write("The join() method also joins all array elements into a string It behaves just like tostring but in addition you can specify the separator:<br>")
+        const frits = ["Banana", "Orange", "Apple", "Mango"];
+        var d=frits.join(" $ ")
+        document.write(d,"<br><br>")
+
+
+        document.write("the pop() method removes the last element from an array:<br>The pop() method returns the value that was popped out<br>")
+        const frui = ["Banana", "Orange", "Apple", "Mango"];
+        frui.pop()
+        document.write(frui,"<br>")
+        const fru = ["Banana", "Orange", "Apple", "Mango"];
+        let fr=fru.pop()
+        document.write(fr,"<br><br>")
+        
+        
+        document.write("push operation in an array<br>")
+        const sr= ["Banana", "Orange", "Apple", "Mango"];
+        let h= sr.push("pandu");
+        document.write(h,"<br>")
+        document.write(sr,"<br><br>")
+
+
+        document.write("The shift() method removes the first array element and shifts all other elements to a lower index. The shift() method returns the value that was shifted out:<br>")
+        const o=["d","e","r"]
+        let oo=o.shift()
+        document.write(o,"<br>")
+        document.write(oo,"<br><br>")
+
+
+        document.write("the unshift is used to add the array element in the starting of array<br>")
+        const l=["d","e","r"]
+        let ll=l.unshift("s")
+        document.write(l,"<br>")
+        document.write(ll,"<br><br>")
+
+
+        document.write("changing the elements in the array<br>")
+        const ol=["d","e","r"]
+        ol[0]="r"
+        document.write(ol,"<br><br>")
+
+        
+        document.write("adding the elements in the array using length<br>")
+        const ok=["d","e","r"]
+        ok[ok.length]="r"
+        document.write(ok,"<br><br>")
+
+        
+        document.write("deleting the elements in the array<br>")
+        const lo=["d","e","r"]
+        delete lo[2]
+        document.write(lo,"<br><br>")
+
+
+        document.write("merging the array using concat here we can add 2 or more arrays and strings also can add<br>")
+        const os=["d","e","r"]
+        const op=["w","r","p"]
+        const ot=["e","u","p"]
+        let dd=os.concat(op)
+        let ds=os.concat(op,ot)
+        let dl=os.concat("remember")
+        document.write(dd,"<br>")
+        document.write(ds,"<br>")
+        document.write(dl,"<br><br>")
+
+
+        document.write("flattening an array using flat function<br>")
+        const ui=[2,4,[3,4,[5,6]],4,6,[45,8]]
+        let r=ui.flat()
+        let y=r.flat()
+        document.write(ui,"<br>")
+        document.write(y,"<br><br>")
+
+
+        document.write("splice is used to add elements in array and remove the elements in an array<br>")
+        const fruiots = ["Banana", "Orange", "Apple", "Mango"];
+        fruiots.splice(2, 0, "Lemon", "Kiwi");
+        document.write(fruiots,"<br>")
+        const fruioots = ["Banana", "Orange", "Apple", "Mango"];
+        fruioots.splice(2,2);
+        document.write(fruioots,"<br><br>")
+
+
+        document.write("slice is used to cut the piece  in an array<br>")
+        const fruiiots = ["Banana", "Orange", "Apple", "Mango"];
+        let fruuiiots= fruiiots.slice(2);
+        document.write(fruuiiots,"<br>")
+        const kok= ["Banana", "Orange", "Apple", "Mango"];
+        let rrr= kok.slice(1,2);
+        document.write(rrr,"<br><br>")
+
+
+        const array=[1,2,3,4,5];
+        const str="madhu";
+        var a=Array.isArray(array)
+        var b=Array.isArray(str)
+        document.write(a,"<br>")
+        document.write(b,"<br><br>")
+
+        
+        //sorting
+        document.write("The sort() method sorts an array alphabetically:<br>")
+        const lol=[1,3,5,"ani","web","mad"]
+        lol.sort()
+        document.write(lol,"<br><br>")
+
+        document.write("The reverse sort() method sorts an array alphabetically:<br>")
+        const loll=[1,3,5,"ani","web","mad"]
+        loll.sort()
+        loll.reverse()
+        document.write(loll,"<br><br>")
+
+        document.write("The number sort() method sorts an array:<br>")
+        // sort assending
+        const llol=[1,3,25,33,9,44]
+        llol.sort(function(a, b){return a-b});
+        document.write(llol,"<br>")
+        //sort descending
+        const lloll=[1,3,25,33,99,6,8,4]
+        lloll.sort(function(a, b){return b - a});
+        document.write(lloll,"<br>")
+        //sort random order
+        const llool=[1,3,25,5,33,99,6,8,]
+        llool.sort(function(){return 0.5-Math.random});
+        document.write(llool,"<br><br>")
+
+
+
+        //Dates
+        document.write("date&time using array");
+        T=new Date(2018, 11, 24, 10, 33, 30, 0);
+        document.write(T)
+
+
+        for(i=10;i>0;i--){
+            if(i!=5&&i!=7){
+                document.write(i,"<br>")
+            }
+        }
+
+
+
+
+
+
+
+        document.write("<br><br>")
+        var a="abcdef"
+        // document.write(a[1],a[0],a[3],a[2],a[5],a[4])
+        for(i=1;i>=0;i--){
+            document.write(a[i])
+        }
+        for(i=3;i>=2;i--){
+            document.write(a[i])
+        }
+        for(i=5;i>=4;i--){
+            document.write(a[i])
+        }
+
+        // const obj={
+        //     name:"madhu"
+            
+        // }
+    </script>
+</body>
+</html>

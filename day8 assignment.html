@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>day8</title>
+</head>
+<body>
+    <script>
+        //problem1
+        document.write("Write a JavaScript program to list the properties of a JavaScript object.<br>")
+        const object1={
+            name:"madhu",
+            id:1234,
+            place:"kphb"
+        }
+        let obj=Object.keys(object1)
+        document.write(obj,"<br><br>")
+
+        //problem2
+        document.write("Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.<br>")
+        const object2={
+            name:"saii",
+            place:"kphb",
+            rollno:23134
+        }
+        delete object2.rollno;
+        document.write("  name:saii, place:kphb,<br><br>")
+        console.log(object2)
+        // let a=object2.length-1
+        // for(i=o;i<a;i++){
+        //     document.write(a[i])
+        // }
+        // for(x in object2){
+        //     document.write(x,"<br>")
+        // }
+        // let bb=Object.entries(object2)
+        // document.write(bb)
+        // let cc=Object.length(bb)
+        // document.write(bb(bb.length-1))
+
+        //problem3
+        document.write("find the length of an object<br>")
+        const object3={
+        name:"saii",
+        place:"kphb",
+        course:"javascript",
+        rolllno:23134,
+        mobile:7728234567
+        }
+        let n=Object.keys(object3)
+        document.write(n.length,"<br><br>")
+
+        //problem4
+        document.write("iterate an object using for in loop and find lenght<br>")
+        const object4={
+        name:"saii",
+        place:"kphb",
+        course:"javascript",
+        rolllno:23134,
+        mobile:7728234567
+        }
+        for(x in object4){
+            document.write(x," ")
+            document.write(object4[x]," ")
+        }
+        document.write("<br>")
+        document.write("length--- ",x.length-1,"<br><br>")
+        // document.write(n.length,"<br><br>")
+
+
+        //problem5
+        document.write("build a object using constructor and literals<br>")
+        const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue"
+        };
+        document.write(person," firstName: John,lastName: Doe,age: 50,eyeColor: blue<br>")
+        const details=new Object();
+        details.firstName="John",
+        details.lastName= "Doe",
+        details.age= 50,
+        details.eyeColor= "blue"
+        document.write(details,"firstName=John,lastName= Doe,age= 50,eyeColor= blue<br><br>")
+
+
+        //problem6
+        document.write("list the values of an object<br>")
+        const object5={
+        name:"saii",
+        place:"kphb",
+        course:"javascript",
+        rolllno:23134,
+        mob:77737726
+        }
+        let h=Object.values(object5)
+        document.write(h,"<br><br>")
+        
+
+
+        //problem7
+        document.write("assigning functions to the objects<br>")
+        const personn = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+        brand:function(){
+            return "FERRARI";
+        }
+        }
+        document.write(personn.brand(),"<br><br>")
+
+
+        //problem8
+        document.write("create an object using this operator<br>")
+        const pers = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName : function() {
+            return this.firstName+" "+this.id;
+        }
+        }
+        document.write(pers.fullName(),"<br><br>")
+
+
+        //problem9
+        document.write("get location of person by get method<br>")
+        const object6={
+            name:"madhu",
+            nation:"indian",
+            id:12343,
+            location:"KPHB",
+            get place(){
+                return this.location;
+            }
+        }
+        document.write(object6.place,"<br><br>")
+
+
+        //problem10
+        document.write("set a value for brand of car ")
+        const car={
+            model:2023,
+            brand:' ',
+            engine:"BS-6",
+            type:"diesel",
+            id:235344,
+            set name (mad){
+                this.brand=mad;
+            }
+        }
+        car.name="LAMBORGINI"
+        document.write(car.brand)
+
+        // const perso = {
+        // firstName: "John",
+        // lastName: "Doe",
+        // language: "",
+        // set lang(value) {
+        //    this.language = value;
+        // }
+        // };
+        // //Set a property using set:
+        // perso.lang = "en";
+        // document.write(perso.language)
+        
+
+
+        //problem11
+        document.write("make operation on nested objects<br>")
+        const object55={
+        name:"saii",
+        place:"kphb",
+        other:{
+            course:"javascript",
+            rolllno:23134,
+            mob:77737726
+        }
+        }
+        document.write(object55.other.course,"<br><br>")
+
+
+        //problem12
+        document.write("make operation on nested arrays objects<br>")
+        const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+            {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+            {name:"BMW", models:["320", "X3", "X5"]},
+            {name:"Fiat", models:["500", "Panda"]}
+        ]
+        }
+        document.write(myObj.cars[1].models)
+
+    </script>
+</body>
+</html>
