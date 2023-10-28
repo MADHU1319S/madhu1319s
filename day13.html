@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+</head>
+<body>
+    <script>
+        //asynchronous functions
+        document.write(`ASYNCHRONOUS METHODS<BR>`)
+        document.write(`1.set time-out=== it  is used to display the content after paricular time<br>`)
+        console.log("set time one1")
+        //or
+        document.write("set time one1<br>")
+            setTimeout(()=>{
+                console.log("set time two2")
+                //or
+                document.write("set time two2")
+            },90000)
+        console.log("set time three3")
+        document.write("set time three3<br>")
+        //or
+            //or we can do it same as like this
+        console.log("set time one1")
+        function sett(){
+                console.log("set time two2")
+            }
+            setTimeout(sett,2000)
+        console.log("set time three3")
+            document.write("<br><br>")
+
+
+
+        // document.write(`1.set interval & clear inteval == set interval used to display the various contents in particular time laspe and clear interval is used stop the set interval<br>`)
+        // let count=0
+        //     //setInterval(()=>{
+        //          // console.log(count++);
+        //    // },1000)
+        //     let result=setInterval(()=>{
+        //         document.write(count++)
+        //         if(count===5){
+        //     clearInterval(result)
+
+        //         }
+        // },1000)
+        // document.write("<br><br>")   
+        
+
+        document.write("clear interval used to terminate the set timeout<br>")
+        document.write("set time two1<br>")
+            let settu=setTimeout(()=>{
+               // console.log("set time two2")
+                //or
+                document.write("set time two2")
+            },2000)
+            clearInterval(settu)
+        //console.log("set time three3")
+        document.write("set time three3")
+        document.write("<br><br>")
+
+
+
+        document.write(`simplified arrow function<br>`)
+         //generally we have arrow function like this
+         //function_name=()=>{}
+         //simplified/updated arrow function
+         // func_name=parameter=>body/cond/return
+         //example
+        let func_name=ram=>ram;
+        document.write(func_name(22))
+
+
+
+
+        //function operations
+        //closure and lexical scope
+        document.write(`clousure and lexical scope== clousure is afeature in JS that an inner function has access to the outer function variables<br>`)
+        function fun1(){
+            let ms="madhu "
+            function fun2(){
+                document.write(ms)
+                let sm="sairam"
+                function fun3(){
+                    document.write(sm)
+                }
+                return fun3()
+            }
+        return fun2()
+        }    
+        fun1()
+        document.write("<br><br>")
+
+
+
+        //currying
+        document.write(`Currying is a technique in functional programming where a function that takes multiple arguments is transformed into a sequence of functions that each take only one argument.<br>`)
+        function mac(a){
+            return function(b){
+                return function(c){
+                    return a+b+c;
+                }
+            }
+        }
+        document.write(mac(3)(5)(5),`<br>`)
+
+        function macc(height){
+            return function(width){
+                return function(breadth){
+                    return height*width*breadth;
+                }
+            }
+        }
+        document.write(macc(3)(5)(5),"<br>")
+
+        //short form of it by using simplified arrow function
+        let cost=pen=>marker=>eraser=>pencil=>pen+marker+eraser+pencil;
+        document.write(cost(10)(20)(10)(15))
+
+
+
+
+    </script>
+</body>
+</html>
