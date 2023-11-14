@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+    <style>
+        #fact{
+            position: relative;
+            top: 450px;
+            left: 675px;
+        }
+    </style>
+</head>
+<body>   
+        
+  <input type="number" id="quantity" min="1">
+   <button>Get Factorial</button><br>
+  <input type="text" id="fact">
+  
+    <script>
+        var div1=document.createElement("div")
+        div1.style.border="2px solid"
+        div1.style.height="30vw"
+        div1.style.width="50%"
+        div1.style.borderRadius="8%"
+        div1.style.marginTop="6%"
+        div1.style.marginLeft="26%"
+        div1.style.backgroundColor="grey"
+        document.body.appendChild(div1)
+        document.body.style.backgroundColor="aqua"
+
+        var h2=document.createElement("h1")
+        h2.innerHTML="Factorial Calculator"
+        h2.style.textAlign="center"
+        h2.style.margin="10%"
+        div1.appendChild(h2)
+
+        
+        let input=document.getElementsByTagName("input")
+        input[0].style.marginLeft="30%"
+        input[0].style.paddingLeft="15%"
+        input[0].style.paddingBottom="1%"
+        input[0].style.paddingTop="1%"
+        div1.appendChild(input[0])
+
+
+        var btn=document.getElementsByTagName("button")
+        btn[0].style.marginLeft="42%"
+        btn[0].style.marginTop="5%"
+        btn[0].style.padding="1.5%"
+        btn[0].style.backgroundColor="violet"
+       
+
+        // var oup=document.getElementById("op")
+        // oup.innerText=''
+
+        btn[0].addEventListener('click',()=>{
+            let inp=document.getElementById('quantity');
+            k=parseInt(inp.value);
+            fact=1;
+            for(i=1;i<=k;i++){
+                fact=fact*i;
+            }
+            inp1=document.getElementById('fact');
+          
+            inp1.value=fact.toString();
+        })
+        div1.appendChild(btn[0])
+        
+
+    
+        // var div2=document.createElement("div")
+        // div2.style.border="2px solid"
+        // div2.style.height="20vw"
+        // div2.style.width="85%"
+        // div2.style.margin="7%"
+        // div2.style.backgroundColor="white"
+        // div1.appendChild(div2)
+    </script>
+</body>
+</html>

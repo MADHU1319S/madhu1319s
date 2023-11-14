@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day14</title>
+    <style>
+        .two{
+            color: aqua;
+            background-color: cornflowerblue;
+            font-family: fantasy;
+        }
+        
+    </style>
+</head>
+<body>
+<!--<script src="./day14.js" defer></script> -->
+    <h1 id="mr">madhu devunuri</h1>
+    <h1 id="sr">sairam</h1>
+
+    <h1 class="ram">rama</h1>
+    <h1 class="ram">sita</h1>
+
+    <h1 id="ten" class="man">10000 coders</h1>
+
+    <p id="demo">hellow</p>
+    <script> 
+        let m=document.getElementById("mr");
+        m.style.color="blue";
+        let s=document.getElementById("sr");
+        s.style.color="red";
+        console.log(m);
+        console.log(s);
+
+        let r=document.getElementsByClassName("ram");
+        r[0].style.color="green"
+        r[1].style.color="orange"
+        console.log(r[0])
+        console.log(r[1]);
+        
+
+
+        let t=document.getElementById("ten").setAttribute("class","two");
+        console.log(t);
+        let kk=t.getAttribute("id")
+        document.getElementById("demo")
+    
+
+    </script>
+</body>
+</html>

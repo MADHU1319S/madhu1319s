@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <script>
+        let img=document.createElement("img")
+        img.setAttribute("src","./pngwing.com.png")
+        img.style.height="250px"
+        img.style.width="150px"
+        img.style.margin="30px"
+        document.body.appendChild(img)
+
+        let div=document.createElement("div")
+        document.body.appendChild(div)
+        div.style.margin="30px"
+
+        let btn1=document.createElement("button")
+        btn1.innerHTML="Turn On Light"
+        let btn2=document.createElement("button")
+        btn2.innerHTML="Turn Off Light"
+        btn2,btn1.style.margin="10px"
+
+        document.body.appendChild(btn1)
+        document.body.appendChild(btn2)
+
+        btn1.addEventListener("click",()=>{
+            img.setAttribute("src","./pngwing.com (1).png")
+        })
+        btn2.addEventListener("click",()=>{
+            img.setAttribute("src","./pngwing.com.png")
+        })
+    </script>
+</body>
+</html>

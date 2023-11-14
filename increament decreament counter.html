@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increament decreament counter</title>
+</head>
+<body>
+
+    <script>
+        var div=document.createElement("div")
+        div.innerHTML=''
+        div.style.display="flex"
+        div.style.gap="10px"
+        div.style.justifyContent="center"
+        div.style.marginTop="10%"
+        document.body.appendChild(div)
+
+        var btn1=document.createElement("button")
+        btn1.style.backgroundColor="aqua"
+        btn1.style.borderRadius="20%"
+        btn1.innerText="-"
+
+        var btn2=document.createElement("button")
+        btn2.style.backgroundColor="aqua"
+        btn2.style.borderRadius="20%"
+        btn2.style.borderRadius="20%"
+        btn2.innerText="+"
+
+        var div1=document.createElement("div")
+        div1.innerText="0"
+
+        div.appendChild(btn1)
+        div.appendChild(div1)
+        div.appendChild(btn2)
+
+        var num=0;
+        function color(num){
+            rangu=''
+            if(num<0){
+                rangu="red"
+            }
+            else if(num>0){
+                rangu="blue"
+            }
+            else{
+                rangu="black"
+            }
+            return rangu
+        }
+
+        btn1.addEventListener("click",()=>{
+         num--;
+            div1.innerHTML=num;
+            div1.style.color=color(num)
+        })
+
+        btn2.addEventListener("click",()=>{
+            num++;
+            div1.innerHTML=num;
+            div1.style.color=color(num)
+        })
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day18</title>
+    <style>
+         div div{
+            border: 1px solid black;
+            width: 25vw;
+            height: 20vw;
+            background-image: linear-gradient(122deg, lightblue 30%,rgb(83, 197, 207),rgb(40, 43, 40));
+
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        button{
+            height: 30px;
+            width: 20%;
+            margin: 30px;
+            color: blue;
+            background-color: rgb(130, 248, 248);
+        }
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="dudu">
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+        <div class="bubu"></div>
+    </div>
+    <center>
+        <button style="text-align: center;">Shuffle</button></center>
+    <script>
+        let array=[
+        "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+        "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+        "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+        "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+        "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+        ]
+
+
+       
+        
+        function Shuffle(array){
+          array.sort(()=>Math.random()-0.3)
+          return array  
+        }
+
+
+        let div=document.getElementsByClassName("bubu")
+
+        let btn=document.getElementsByTagName("button")
+
+        btn[0].addEventListener("click",()=>{
+            clear()
+            newarr=Shuffle(array)
+            newarr.map((val,ind)=>{
+                var image=document.createElement("img")
+                image.setAttribute("src",val)
+                image.style.height="100%"
+                image.style.width="100%"
+                div[ind].appendChild(image)
+            // display(arr1)
+        })
+    })
+    //     function display(arr1){
+    //         arr1.map((val,ind)=>{
+    //         imgg=document.createElement('img');
+    //         imgg.setAttribute('src',val);
+    //         imgg.style.width="100%";
+    //         imgg.style.height="100%";
+    //         a[ind].appendChild(imgg)
+    //     })
+    // }
+        function clear(){
+            for(i=0;i<div.length;i++){
+                div[i].innerHTML=''
+            }
+        }
+
+
+
+        // function total(array){
+        //     for(i=0;i<array.length;i++){
+        // var img=document.createElement("img")
+        // img.setAttribute("src",array[i])
+        // img.style.height="100px"
+        // img.style.width="100px"
+        // document.body.appendChild(img)
+        // }
+        // }
+       
+
+        // let button=document.getElementById("but")
+
+        // button.addEventListener("click",()=>{
+        //     var arr=suffle(array)
+        //     total(arr)
+        // })
+        // function suffle(array){
+        //     var arr1=array.sort(()=>Math.random()-0.4)
+        //     return arr1
+        // }
+    </script>
+    
+</body>
+</html>

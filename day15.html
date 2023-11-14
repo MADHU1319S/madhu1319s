@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day15</title>
+    <style>
+        /* .mr{
+            text-align: center;
+        } */
+        .image{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        #hobbies{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .machine{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .blue{
+            color: blue;
+        }
+        #career{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CRUD operations 
+        READ----
+        we can read the elements in 5 ways
+        1.ID  --document.getElementById
+        2.CLASS --document.getElementsByClassName
+        3.TAG name --document.getElementsByTagName
+        4.QUERY  --document.querySelector
+        5.QUERYALL --document.querySelectorAll
+
+
+        CamelCase
+        Snake_case
+
+        SetAttribute
+        GetAttribute
+
+        InnerHTML
+        InnerText
+
+        Callbacks
+    -->
+
+    <H1 id="madhu">Madhu Devunuri</H1>
+    <img id="pic" src="./bhagwan-Ram-png.png"><br><br><br>
+    <a href="">dmadhu2k@gmail.com</a><br>
+    <a href="">+91-77298-66215</a>
+    <br><br><br>
+    <hr>
+    <h2>Educational Qualifications     </h2>
+    <h4>Graduation : B-Tech CSE 74%</h4>
+    <h4>Diploma : Mechanical 75%</h4>
+    <h4>SSC : 2015-2016 --83%</h4>
+
+    <h2>Career objective</h2>
+    <pre id="pre">
+        To secure a challenging position in a reputable organization to expand
+        my learnings, knowledge, and skills. Example 2: Secure a responsible
+        career opportunity to fully utilize my training and skills, while making
+        a significant contribution to the success of the company.</pre>
+ 
+ <div id="lang">
+    <div><h2>Skills</h2>
+    <h4>HTML</h4>
+    <h4>CSS</h4>
+    <h4>JAVASCRIPT</h4>
+    <h4>REACT.JS</h4>
+    </div>
+
+   <div> <h2>Languages</h2>
+    <h4>English</h4>
+    <h4>Hindi</h4>
+    <h4>Telugu</h4>
+    </div>
+    </div>
+
+<div class="hob">
+  <div>  <h2>Hobbies</h2>
+    <h4>Playing chess</h4>
+    <h4>Watching movies</h4>
+    <h4>listening music</h4></div>
+
+
+    <div><h2>Intrests</h2>
+    <h4>Creating blogs</h4>
+    <h4>Browsing web</h4>
+    <h4>Fast Learner</h4></div>
+</div>
+
+    <h2 class="pro">Project details</h2>
+   <div id="project">
+    <div>
+        <h3>1.Machine learning model for average fuel consumption</h3>
+    <pre> 
+        Finding the average fule consumption in heavy vehicles 
+        By using  weight and distance of destination
+        with the help of kinetic energy and potential energy
+    </pre>
+    </div>
+    <div>
+        <h3>2.Online voting system</h3>
+    <pre>
+        Voting or polling for elections,pollings 
+        counting system with machine learning techniques
+        giving result as highest polled count
+    </pre>
+    </div>
+   </div>
+
+
+
+
+
+
+    <script>
+        
+       let a= document.getElementById("madhu");
+       a.style.textAlign="center"
+
+       let w=document.getElementById("pic")
+       w.classList.add("image")
+       w.setAttribute("src","./Screenshot (87).png")
+
+       let fu= document.getElementById("lang")
+       fu.style.display="flex";
+       fu.style.justifyContent="space-evenly"
+
+        let ss=document.getElementsByClassName("hob")
+        ss[0].setAttribute("id","hobbies");
+       
+
+        let ms=document.getElementsByClassName("pro")
+        ms[0].style.textAlign="center"
+
+        document.getElementById("project").setAttribute("class","machine")
+
+       let ad= document.getElementsByTagName("h2")
+       ad[0].style.textAlign="center"
+       ad[0].classList.add("blue")
+        ad[1].style.textAlign="center"
+        ad[1].classList.add("blue")
+
+
+       let ab=document.getElementsByTagName("h4")
+       ab[0].style.textAlign="center"
+       ab[1].style.textAlign="center"
+       ab[2].style.textAlign="center"
+
+       document.getElementById("pre").setAttribute("id","career")
+       
+       let gm= document.getElementsByTagName("a")
+       gm[0].setAttribute("href","dmadhu2k@gmail.com")
+       gm[1].setAttribute("href","7729866215")
+       
+       
+    
+
+
+    </script>
+</body>
+</html>

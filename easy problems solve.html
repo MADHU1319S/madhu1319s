@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem solving questions</title>
+</head>
+<body>
+    <script>
+        //problem 1
+        document.write("1.Create a function that takes two numbers as arguments and returns their sum.<br>")
+        function numbers(a,b){
+            const sum=a+b;
+            document.write(`3+5= ${sum}`,"<br><br>")
+        }
+        numbers(3,5)
+
+        //problem 2
+        document.write("2.Write a function that takes an integer minutes and converts it to seconds.<br>")
+        function minutes(a){
+            let sec=a*60;
+            document.write(`34 minutes is equals to = ${sec}\Sec<br><br>`)
+        }
+        minutes(34)
+
+        //problem 3
+        document.write("3.Create a function that takes a number as an argument, increments the number by +1 and returns the result<br>")
+        function incrementNumber(num) {
+        return ++num;
+        }
+        document.write(incrementNumber(3),"<br><br>")
+
+        //problem 4
+        document.write("4.Create a function that takes the age in years and returns the age in days.<br>")
+        function years(age){
+            return age*365+age/4;
+        }
+        document.write(`23 years is equals to ${years(23)}days<br><br>`)
+
+        //problem 5
+        document.write("5.Create a function that takes voltage and current and returns the calculated power.<br>")
+        function power(current,voltage){
+            return current*voltage;
+        }
+        document.write(`${power(12,45)}<br><br>`)
+
+        //problem 6
+        document.write("6.Write a function that returns the string 'something' joined with a space ' ' and the given argument a.<br>")
+        function string(a){
+            return "something"+' '+a;
+        }
+        document.write(string(2),"<br><br>")
+
+        //problem 7
+        document.write("7.Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.<br>")
+        function integers(a,b){
+            if(a==10||a+b==10||b==10){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        document.write(integers(4,10),"<br><br>")
+
+        //problem 8
+        document.write("8.Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.<br>")
+        function strings(h,m){
+            let ms=h.length;
+            let sm=m.length;
+            if(ms==sm){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        document.write(strings("ddr","drr"),"<br><br>")
+
+        //problem 9
+        document.write("9.Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.<br>")
+        arrow=(a)=>{
+            return "welcome"+a+" good morning";
+        }
+        document.write(arrow(" madhu"),"<br><br>")
+
+        //problem 10
+        document.write("10.Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555)<br>")
+        // const array=[7,7,2,9,8,6,6,2,1,5]
+        // let str=array.toString()
+        function arrays(k){
+            var one='';
+            var two='';
+            var three='';
+            // for(i=0;i<3;i++){
+            //     one+=k[i]
+            // }
+            // for(i=3;i<6;i++){
+            //     two+=k[i]
+            // }
+            // for(i=6;i<k.length;i++){
+            //     three+=k[i]
+            // }
+            // return "("+one+") "+two+" - "+three;
+            for(i=0;i<k.length;i++){
+                if(i<3){
+                    one+=k[i]
+                }
+                else if(i<6){
+                    two+=k[i]
+                }
+                else{
+                    three+=k[i]
+                }
+            }
+            return "("+one+") "+two+" - "+three;
+        }
+        document.write(arrays([7,7,2,9,8,6,6,2,1,5]),"<br><br>")
+
+        //problem 11
+        document.write("11.	Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.<br>")
+        function reverseCase(str) {
+        var result = '';
+        for (var i = 0; i < str.length; i++) {
+            var char = str[i];
+            if (char === char.toUpperCase()) {
+            result += char.toLowerCase();
+            } else {
+            result += char.toUpperCase();
+            }
+        }
+        return result;
+        }
+        document.write(reverseCase("Madhu Devunuri"),"<br><br>")
+
+
+        //problem 12
+        document.write("12.	Create a function that returns an array of strings sorted by length in ascending order.<br>")
+        let  arrey=["a","ccc","dddd","bb","eeeee"]
+        let newarrey=arrey.sort()
+        document.write(newarrey,"<br><br>")
+
+
+        //problem 13
+        document.write("13.	Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.<br>")
+        function largestNumbers(arrays) {
+        let largest = [];
+            for (let i = 0; i < arrays.length; i++) {
+                let max = arrays[i][0];
+                for (let j = 1; j < arrays[i].length; j++) {
+                    if (arrays[i][j] > max) {
+                        max = arrays[i][j];
+                    }
+                }
+                largest.push(max);
+            }
+        return largest;
+        }
+        const Arrays= [[13, 27, 18, 26],[4, 5, 1, 3],[32, 35, 37, 39],[1000, 1001, 857, 1]];
+        document.write(largestNumbers(Arrays),"<br>")        
+
+
+
+        // function largearray(arr) {
+        // return arr.map(subarray => Math.max(...subarray));
+        // }
+        // // Example usage:
+        // const Array = [[13, 27, 18, 26],[4, 5, 1, 3],[32, 35, 37, 39],[1000, 1001, 857, 1]];
+        // const result = largearray(Array);
+        // document.write(result,"<br><br>");
+
+
+        //problem 14
+        document.write("14.	Create a function that takes an array of numbers and returns the second largest number.<br>")
+        // let arroy=[10,20,30,40,50]
+        // let sl='';
+        // for(i=0;i<arroy.length;i++){
+        //     sl=arroy[i<i]
+        // }
+        // document.write(sl)
+        function largest(arr) {
+            const sortedArr = myArray.sort((a, b) => b - a);
+            return sortedArr[1];
+        }
+        // Example usage:
+        const myArray = [12, 35, 1, 10, 34, 1];
+        const secondLargest = largest(myArray);
+        document.write(`The second largest element is ${secondLargest}<br><br>`);
+
+
+        //problem 15
+        document.write("15.	Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).<br>")
+        function removeDuplicates(arr) {
+        let uniqueArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (!uniqueArr.includes(arr[i])) {
+            uniqueArr.push(arr[i]);
+            }
+        }
+        return uniqueArr;
+        }
+        var are=[1,2,3,4,4,5,6,0,2,5]
+        document.write(removeDuplicates(are),"<br>")
+
+        // function removeDuplicates(arr) {
+        //     return [...new Set(arr)];
+        // }
+
+        // const myArrayy = [1, 2, 3, 4, 4,5,6,0,2, 5];
+        // document.write(removeDuplicates(myArrayy),"<br><br>");
+
+      
+        //problem 16
+        document.write("16.	Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.<br>")
+        function findUnique(arr) {
+        let result = 0;
+            for (let i = 0; i < arr.length; i++) {
+                result ^= arr[i];
+            }
+            return result;
+        }
+
+        const myArraiy = [2,2,2,3,5,6,4,4,4];
+        document.write(findUnique(myArraiy),"<br><br>");
+
+
+
+        //problem 17
+        document.write("17.	Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.<br>")
+        function stringcheck(one,two){
+            let count=0;
+            for(i=0;i<two.length;i++){
+                if(one==two[i]){
+                    count++
+                }
+            }
+            document.write(count)
+        }
+        stringcheck("c","cucumber coconut coca")
+        document.write("<br><br>")
+
+
+        //problem 18
+        document.write(" 18. Create a function that takes a string and returns the number (count) of vowels contained within it.<br>")
+        function owels(st){
+            coun=0
+            for(i=0;i<st.length;i++){
+                if(st[i]=='a'||st[i]=='e'||st[i]=='i'||st[i]=='o'||st[i]=='u'){
+                    coun++
+                }
+            }
+            document.write(coun)
+        }
+        owels("indian army soldiers")
+        document.write("<br><br>")
+
+
+        //problem 19
+        document.write("19.Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.<br>")
+        function twomul(n){
+            let G=2
+            
+            for(i=1;i<=n;i++){
+                return k=G*n[i]
+            
+        
+            }
+        }
+        twomul(5)
+        document.write("<br><br>")
+
+
+        //problem 20
+        document.write("20. Create Function that will take one parameter and return type of the data.<br>")
+        function typeoof(a){
+             return typeof a
+           
+        }
+        document.write( typeoof(55),"<br>")
+        document.write( typeoof("madhu"),"<br><br>")
+
+
+        //problem 21
+        document.write("21. Program to find greatest of three numbers(using ternery operator).<br>")
+        function greatest(arey){
+            let big=areyy.sort((a,b)=>b-a)
+            return big[0]
+        }
+        let areyy=[4,7,12]
+        let b=greatest(areyy)
+        document.write(b,"<br><br>")
+
+
+        //problem 22
+        document.write(` 22 . Program to find factorial of number.<br>`)
+        let ss=5;
+        let sss=1;
+       for(i=1;i<=ss;i++){
+            sss*=i
+            //sss=sss*i
+       }
+        document.write(sss)
+        // function factorial(n){
+        //     if(n==0){
+        //         return 1;
+        //     }
+        //     else{
+        //         return n*factorial(n-1)
+        //     }
+        // }
+        // let numm=5
+        // document.write(factorial(numm))
+        document.write("<br><br>")
+
+
+        //problem 23
+        document.write(" 23. Program to arrange numbers in ascending order  Sort the Array using loop only(you can not use predefined function<br>")
+        // function sort(n){
+        //     let temp='';
+        //     for(i=0;i<=n.length-1;i++){
+        //         for(j=i+1;j<=n.length-1;j++){
+        //             if(n[i]>n[j]){
+        //                 temp=n[i];
+        //                 n[i]=n[j];
+        //                 n[j]=temp;
+        //             }
+        //         }
+        //     }
+        // }
+        // let aroy=[3,5,9,5,1]
+        // document.write(sort(aroy))
+        const numberss= [3, 1, 4, 2, 5];
+        let temp;
+        for (let i = 0; i < numberss.length; i++) {
+            for (let j = i + 1; j < numberss.length; j++) {
+                if (numberss[i] > numberss[j]) {
+                    temp = numberss[i];
+                    numberss[i] = numberss[j];
+                    numberss[j] = temp;
+                }
+            }
+        }
+        document.write(`The sorted array in ascending order is: ${numberss}`);
+        document.write("<br><br>")
+
+
+
+        //problem 24
+        document.write(`24. Print Pattern using loop.<br>`)
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+            document.write(j)
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+
+        //problem 25
+        document.write("25.Program to Calculate the Power of a Number(using loop only).<br>")
+        function power(a,b){
+            pow=1;
+            for(i=1;i<=b;i++){
+                pow*=a
+            }
+            return pow
+        }
+        power(5,3)
+        document.write(pow)
+        document.write("<br><br>")
+
+
+
+        //problem 26
+        document.write(`26.Program to Check Whether a Number is Prime or Not<br>`)
+        function prime(a){
+            if(a==2||a==3||a==5){
+                document.write(a," is prime number")
+            }
+            else if(a<=1){
+                document.write(a," is not prime number")
+            }
+            else if(a%4==0||a%5==0||a%2==0||a%3==0){
+                document.write(a," is not prime number")
+            }
+            else{
+                document.write(a," is a prime number")
+            } 
+        }
+        prime(71)
+        document.write("<br><br>")
+
+
+
+        //problem 27
+        document.write(`27.Count occurrence of number:<br>`)
+        function occur(a){
+            let cont=0;
+            for(i=0;i<=a.length-1;i++){
+                if(a[i]==7){
+                    cont++
+                }
+            }
+            document.write(cont)
+        }
+       occur([2,3,6,7,9,6,7,12,4,7])
+        document.write("<br><br>")
+        
+
+      
+       //problem 28
+        document.write("28. Program to find LCM of two numbers using while loop<br>")
+       let num1 = 15
+        let num2 = 50
+        let large = (num1 > num2) ? num1:num2;
+        while (true) {
+            if (large % num1 == 0 && large % num2 == 0) {
+                break;
+            }
+            ++large;
+        }
+        document.write(large)
+        document.write("<br><br>")
+
+
+
+        //problem 29
+         document.write(" 29. Program to Display Characters from A to Z Using Loop with count.<br>")
+        let count = 0;
+        for (let c = 'A'.charCodeAt(0); c <= 'Z'.charCodeAt(0); ++c) {
+            document.write(`${String.fromCharCode(c)}${count+1}<br>`);
+            count++;
+        }
+        document.write("<br><br>")
+
+
+         //problem 30
+         document.write("32. Reverse a number using while Loop<br>")
+         let noo=123
+         let ser=noo.toString()
+         i=ser.length-1;
+        while(i>=0){
+            document.write(ser[i])
+            i--;
+        }
+        document.write("<br><br>")
+
+
+        //problem 31
+        document.write("31. program to insert  the elements of an array for specific index.<br>")
+        let arw=[1,2,3,4,5,7,8,9]
+        let aop=[]
+        let ind=5;
+        let element=6
+        for(i=0;i<=arw.length-1;i++){
+            if(arw[i]==ind){
+                aop.push(element)
+            }
+            aop.push(arw[i])  
+        }
+        document.write(aop)
+        document.write("<br><br>")
+
+
+        //problem 32
+        document.write("32.Program to count vowels and consonants in a given String.<br>")
+        let nam="technical education"
+        let cnt=''
+        for(i=0;i<nam.length;i++){
+            if(nam[i]=='a'||nam[i]=='e'||nam[i]=='i'||nam[i]=='o'||nam[i]=='u'){
+                cnt++
+            }
+        }
+        document.write(`vowels in string ${cnt}<br>`)
+        document.write(`consonants in string${nam.length-1-cnt}`)
+        document.write("<br><br>")
+
+        //problem 33
+        document.write(`33.Program to find a missing number in array in javascript  using predefined<BR>`)
+            let arpy=[0,1,2,3,4,6]
+            let add=0;
+            let ni=arpy.length;
+            add=(ni*(ni+1)/2)
+            for(i=0;i<ni;i++){
+                add-=arpy[i]
+            }
+            document.write(`missing number is ${add}`)
+            
+            
+
+
+    </script>
+</body>
+</html>
