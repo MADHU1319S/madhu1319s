@@ -6,7 +6,8 @@
     <title>cartwindow</title>
 </head>
 <body>
-    <div></div>
+    <button onclick="window.history.back()" style="background-color: rgb(189, 225, 225); padding: 1% 2% 1% 2%;">back</button>
+    <div style="display: flex; height: 2000px; "></div>
    
     <script>
         
@@ -42,24 +43,26 @@
             remove.style.margin="12%"
             remove.style.padding="3%"
 
+            var dev=document.createElement("div")
+            dev.appendChild(img)
+            dev.appendChild(a)
+            dev.appendChild(a1)
+            dev.appendChild(a2)
+            dev.appendChild(a3)
+            dev.appendChild(a4)
+            dev.appendChild(a5)
+            dev.appendChild(a6)
+            dev.appendChild(remove)
 
-            div[0].appendChild(img)
-            div[0].appendChild(a)
-            div[0].appendChild(a1)
-            div[0].appendChild(a2)
-            div[0].appendChild(a3)
-            div[0].appendChild(a4)
-            div[0].appendChild(a5)
-            div[0].appendChild(a6)
-            div[0].appendChild(remove)
+            div[0].appendChild(dev)
             
-            div[0].style.height="26%"
-            div[0].style.width="20%"
-            div[0].style.border="2px solid"
-            div[0].style.backgroundImage="linear-gradient(120deg,lightblue 40%,pink 40%)"
-            div[0].style.wordBreak="break-all"
-            div[0].style.padding="2%"
-            div[0].style.margin="2%"
+            dev.style.height="26%"
+            dev.style.width="20%"
+            dev.style.border="2px solid"
+            dev.style.backgroundImage="linear-gradient(120deg,lightblue 40%,pink 40%)"
+            dev.style.wordBreak="break-all"
+            dev.style.padding="2%"
+            dev.style.margin="2%"
 
             remove.addEventListener('click',()=>{
                 arrey.splice(ind,1);
@@ -103,24 +106,27 @@
             remove.style.margin="12%"
             remove.style.padding="3%"
 
-
-            div[0].appendChild(img)
-            div[0].appendChild(a)
-            div[0].appendChild(a1)
-            div[0].appendChild(a2)
-            div[0].appendChild(a3)
-            div[0].appendChild(a4)
-            div[0].appendChild(a5)
-            div[0].appendChild(a6)
-            div[0].appendChild(remove)
+            var dev=document.createElement("div")
+            dev.appendChild(img)
+            dev.appendChild(a)
+            dev.appendChild(a1)
+            dev.appendChild(a2)
+            dev.appendChild(a3)
+            dev.appendChild(a4)
+            dev.appendChild(a5)
+            dev.appendChild(a6)
+            dev.appendChild(remove)
             
-            div[0].style.height="26%"
-            div[0].style.width="20%"
-            div[0].style.border="2px solid"
-            div[0].style.backgroundImage="linear-gradient(120deg,lightblue 40%,pink 40%)"
-            div[0].style.wordBreak="break-all"
-            div[0].style.padding="2%"
-            div[0].style.margin="2%"
+            div[0].appendChild(dev)
+
+
+            dev.style.height="26%"
+            dev.style.width="20%"
+            dev.style.border="2px solid"
+            dev.style.backgroundImage="linear-gradient(120deg,lightblue 40%,pink 40%)"
+            dev.style.wordBreak="break-all"
+            dev.style.padding="2%"
+            dev.style.margin="2%"
 
 
             remove.addEventListener('click',()=>{
