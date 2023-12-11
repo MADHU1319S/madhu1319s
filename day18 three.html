@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <button>See More</button>
+    <button>Forward</button>
+    <button>Reset</button>
+    <button>more</button>
+    <script>
+        let array=[{
+        "id": 1,
+        "title": "Mens Casual Premium Slim Fit T-Shirts ",
+        "price": 22.3,
+        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+        },
+        {
+        "id": 2,
+        "title": "Mens Cotton Jacket",
+        "price": 55.99,
+        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    
+    }]
+    var btn=document.getElementsByTagName("button")
+    var div=document.getElementsByTagName("div")
+
+    array.map((val,ind)=>{
+        var img=document.createElement("img")
+    img.style.height="100px"
+    img.style.width="100px"
+    img.setAttribute("src",val["image"])
+    div[0].appendChild(img)
+    })
+
+    //window.location.assign("url")
+    //it is used to navigate to another page in current document/tab
+
+    //window.open("url")
+    //it is used to navigate to another page in other document/tab
+
+    //window.close("url")
+    //it is used to close the document/tab
+     
+
+
+    btn[0].addEventListener("click",()=>{
+        // window.location.assign("./backWindow18.html")
+        // window.open("./backWindow18.html")
+        var val=confirm("ur entering to that site")
+        if(val){
+            window.open("./day18 three backWindow18.html","_self")
+        }
+        else{
+
+        }
+
+       
+    })
+
+    btn[1].addEventListener("click",()=>{
+
+
+        window.history.forward()
+    })
+
+    btn[2].addEventListener("click",()=>{
+        window.location.reload()
+    })
+
+
+
+
+    //MAIN DATA
+
+    btn[3].addEventListener("click",()=>{
+         clear()
+        
+        array.map((val,ind,arr)=>{
+            var a=document.createElement("div")
+            var a1=document.createElement("div")
+            var a2=document.createElement("div")
+            var a3=document.createElement("div")
+            var a4=document.createElement("div")
+            var a5=document.createElement("div")
+            var a6=document.createElement("div")
+
+            a.innerHTML=val["id"]
+            a1.innerHTML=val["title"]
+            a2.innerHTML=val["price"]
+            a3.innerHTML=val["category"]
+            a4.innerHTML=val["rating"]["rate"]
+            a5.innerHTML=val["rating"]["count"]
+            a6.innerHTML=val["description"]
+
+            var img=document.createElement("img")
+            img.style.height="100px"
+            img.style.width="100px"
+            img.setAttribute("src",val["image"])
+            div[1].appendChild(img)
+
+            div[1].appendChild(a)
+            div[1].appendChild(a1)
+            div[1].appendChild(a2)
+            div[1].appendChild(a3)
+            div[1].appendChild(a4)
+            div[1].appendChild(a5)
+            div[1].appendChild(a6)
+
+        })
+    })
+
+    function clear(){
+        div[1].innerHTML=''
+    }
+
+
+
+    </script>
+</body>
+</html>
